@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- 透晶掩体 -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>TransparentBarricade</defName>
+    <label>transparent barricade</label>
+    <description>A transparent barricade made of crystal material. Provides excellent cover while allowing light to pass through. Fireproof and much more attractive than sandbags.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <drawStyleCategory>Defenses</drawStyleCategory>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>42</pathCost>
+    <pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+    <fillPercent>0.6</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <neverMultiSelect>true</neverMultiSelect>
+    <graphicData>
+      <texPath>Things/Building/Linked/Sandbags_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Sandbags</li>
+      </linkFlags>
+    </graphicData>
+    <selectable>true</selectable>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>500</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>5</Beauty>
+    </statBases>
+    <costList>
+      <CrystalMaterial>3</CrystalMaterial>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <uiIconPath>Things/Building/Linked/Sandbags_MenuIcon</uiIconPath>
+    <uiOrder>1</uiOrder>
+    <replaceTags>
+      <li>Barricade</li>
+    </replaceTags>
+    <building>
+      <isInert>true</isInert>
+      <ai_chillDestination>false</ai_chillDestination>
+      <paintable>false</paintable>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/Sandbags_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>1</glowRadius>
+        <glowColor>(200,200,195,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>CrystalTech</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

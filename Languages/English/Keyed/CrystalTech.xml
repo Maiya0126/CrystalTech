@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CrystalTech_SettingTransparency>Building transparency: {0}</CrystalTech_SettingTransparency>
+  <CrystalTech_SettingMood>Enable transparent wall mood effect</CrystalTech_SettingMood>
+  <CrystalTech_SettingLight>Enable indoor light transmission through transparent walls</CrystalTech_SettingLight>
+  <CrystalTech_SettingYield>Crystal material crafting yield multiplier: {0}x</CrystalTech_SettingYield>
+  <CrystalTech_SettingAntiStealth>Enable anti-stealth detection</CrystalTech_SettingAntiStealth>
+  <CrystalTech_SettingItemGlow>Enable crystal item glow</CrystalTech_SettingItemGlow>
+  <CrystalTech_MilestoneMessage>Crystal Tech milestone reached! {0} crystal buildings built!</CrystalTech_MilestoneMessage>
+  <CrystalTech_DetectorTriggered>Crystal detector has detected an invisible creature!</CrystalTech_DetectorTriggered>
+  <CrystalTech_CloakedDetected>Invisible creature detected</CrystalTech_CloakedDetected>
+
+</LanguageData>

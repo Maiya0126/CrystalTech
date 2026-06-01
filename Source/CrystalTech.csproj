@@ -1,0 +1,132 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+        <AssemblyName>CrystalTech</AssemblyName>
+        <RootNamespace>CrystalTech</RootNamespace>
+        <LangVersion>latest</LangVersion>
+        <OutputPath>bin\$(Configuration)\</OutputPath>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <ModOutputDir>D:\games\steamapps\common\Rimworld\Mods\MaiyaMod11 Crystal Tech 透晶科技</ModOutputDir>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Reference Include="Assembly-CSharp">
+            <HintPath>..\..\萌螈杂货铺\Source\bin\Debug\Assembly-CSharp.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="0Harmony">
+            <HintPath>..\..\萌螈杂货铺\Source\bin\Debug\0Harmony.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine">
+            <HintPath>..\..\..\Games\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+            <HintPath>..\..\..\Games\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+    
+    <ItemGroup>
+        <Folder Include="Properties\" />
+    </ItemGroup>
+    
+    <Target Name="CopyToModDir" AfterTargets="Build">
+        <PropertyGroup>
+            <PublishedFileIdPath>$(ModOutputDir)\About\PublishedFileId.txt</PublishedFileIdPath>
+        </PropertyGroup>
+        <ReadLinesFromFile File="$(PublishedFileIdPath)" Condition="Exists('$(PublishedFileIdPath)')">
+            <Output TaskParameter="Lines" PropertyName="SavedPublishedFileId" />
+        </ReadLinesFromFile>
+        
+        <ItemGroup>
+            <OldFiles Include="$(ModOutputDir)\**\*.*" Exclude="$(ModOutputDir)\About\PublishedFileId.txt" />
+        </ItemGroup>
+        <Delete Files="@(OldFiles)" Condition="Exists('$(ModOutputDir)')" />
+        <RemoveDir Directories="$(ModOutputDir)\Assemblies" Condition="Exists('$(ModOutputDir)\Assemblies')" />
+        <RemoveDir Directories="$(ModOutputDir)\Defs" Condition="Exists('$(ModOutputDir)\Defs')" />
+        <RemoveDir Directories="$(ModOutputDir)\1.6" Condition="Exists('$(ModOutputDir)\1.6')" />
+        <RemoveDir Directories="$(ModOutputDir)\Textures" Condition="Exists('$(ModOutputDir)\Textures')" />
+        <RemoveDir Directories="$(ModOutputDir)\Languages" Condition="Exists('$(ModOutputDir)\Languages')" />
+        
+        <MakeDir Directories="$(ModOutputDir)\Assemblies" />
+        <MakeDir Directories="$(ModOutputDir)\About" />
+        <MakeDir Directories="$(ModOutputDir)\Defs\ThingDefs_Buildings" />
+        <MakeDir Directories="$(ModOutputDir)\Defs\ThingDefs_Apparel" />
+        <MakeDir Directories="$(ModOutputDir)\Defs\ThingDefs_Weapons" />
+        <MakeDir Directories="$(ModOutputDir)\Defs\ThingDefs_Items" />
+        <MakeDir Directories="$(ModOutputDir)\Defs\HediffDefs" />
+        <MakeDir Directories="$(ModOutputDir)\Defs\ResearchDefs" />
+        <MakeDir Directories="$(ModOutputDir)\Defs\ThoughtDefs" />
+        <MakeDir Directories="$(ModOutputDir)\Defs\RecipeDefs" />
+        <MakeDir Directories="$(ModOutputDir)\Textures\Things\Item" />
+        <MakeDir Directories="$(ModOutputDir)\Textures\Things\Building\Furniture" />
+        <MakeDir Directories="$(ModOutputDir)\Textures\Things\Item\Weapons" />
+        <MakeDir Directories="$(ModOutputDir)\Languages\ChineseSimplified\DefInjected\ThingDef" />
+        <MakeDir Directories="$(ModOutputDir)\Languages\ChineseSimplified\DefInjected\TerrainDef" />
+        <MakeDir Directories="$(ModOutputDir)\Languages\ChineseSimplified\DefInjected\HediffDef" />
+        <MakeDir Directories="$(ModOutputDir)\Languages\ChineseSimplified\DefInjected\RecipeDef" />
+        <MakeDir Directories="$(ModOutputDir)\Languages\ChineseSimplified\DefInjected\ResearchProjectDef" />
+        <MakeDir Directories="$(ModOutputDir)\Languages\ChineseSimplified\DefInjected\ThoughtDef" />
+        <MakeDir Directories="$(ModOutputDir)\Languages\ChineseSimplified\Keyed" />
+        <MakeDir Directories="$(ModOutputDir)\Languages\English\DefInjected\ThingDef" />
+        <MakeDir Directories="$(ModOutputDir)\Languages\English\DefInjected\TerrainDef" />
+        <MakeDir Directories="$(ModOutputDir)\Languages\English\DefInjected\HediffDef" />
+        <MakeDir Directories="$(ModOutputDir)\Languages\English\DefInjected\RecipeDef" />
+        <MakeDir Directories="$(ModOutputDir)\Languages\English\DefInjected\ResearchProjectDef" />
+        <MakeDir Directories="$(ModOutputDir)\Languages\English\DefInjected\ThoughtDef" />
+        <MakeDir Directories="$(ModOutputDir)\Languages\English\Keyed" />
+        
+        <Copy SourceFiles="$(OutputPath)CrystalTech.dll" DestinationFiles="$(ModOutputDir)\Assemblies\CrystalTech.dll" />
+        
+        <Copy SourceFiles="..\About\About.xml" DestinationFiles="$(ModOutputDir)\About\About.xml" />
+        <Copy SourceFiles="..\About\Preview.png" DestinationFiles="$(ModOutputDir)\About\Preview.png" Condition="Exists('..\About\Preview.png')" />
+        
+        <Copy SourceFiles="..\Defs\ThingDefs_Buildings\Buildings_Transparent_Basic.xml" DestinationFiles="$(ModOutputDir)\Defs\ThingDefs_Buildings\Buildings_Transparent_Basic.xml" />
+        <Copy SourceFiles="..\Defs\ThingDefs_Buildings\Buildings_Transparent_Advanced.xml" DestinationFiles="$(ModOutputDir)\Defs\ThingDefs_Buildings\Buildings_Transparent_Advanced.xml" />
+        <Copy SourceFiles="..\Defs\ThingDefs_Buildings\Buildings_Transparent_Reinforced.xml" DestinationFiles="$(ModOutputDir)\Defs\ThingDefs_Buildings\Buildings_Transparent_Reinforced.xml" />
+        <Copy SourceFiles="..\Defs\ThingDefs_Buildings\Buildings_Transparent_Special.xml" DestinationFiles="$(ModOutputDir)\Defs\ThingDefs_Buildings\Buildings_Transparent_Special.xml" />
+        <Copy SourceFiles="..\Defs\ThingDefs_Buildings\Buildings_Transparent_Furniture.xml" DestinationFiles="$(ModOutputDir)\Defs\ThingDefs_Buildings\Buildings_Transparent_Furniture.xml" />
+        <Copy SourceFiles="..\Defs\ThingDefs_Buildings\Buildings_Transparent_Security.xml" DestinationFiles="$(ModOutputDir)\Defs\ThingDefs_Buildings\Buildings_Transparent_Security.xml" />
+        <Copy SourceFiles="..\Defs\ThingDefs_Apparel\Apparel_Crystal.xml" DestinationFiles="$(ModOutputDir)\Defs\ThingDefs_Apparel\Apparel_Crystal.xml" />
+        <Copy SourceFiles="..\Defs\ThingDefs_Weapons\Weapons_Crystal.xml" DestinationFiles="$(ModOutputDir)\Defs\ThingDefs_Weapons\Weapons_Crystal.xml" />
+        <Copy SourceFiles="..\Defs\ThingDefs_Items\Items_Crystal.xml" DestinationFiles="$(ModOutputDir)\Defs\ThingDefs_Items\Items_Crystal.xml" />
+        <Copy SourceFiles="..\Defs\HediffDefs\Hediffs_Crystal.xml" DestinationFiles="$(ModOutputDir)\Defs\HediffDefs\Hediffs_Crystal.xml" />
+        <Copy SourceFiles="..\Defs\ResearchDefs\ResearchProjects.xml" DestinationFiles="$(ModOutputDir)\Defs\ResearchDefs\ResearchProjects.xml" />
+        <Copy SourceFiles="..\Defs\ThoughtDefs\Thoughts_Transparency.xml" DestinationFiles="$(ModOutputDir)\Defs\ThoughtDefs\Thoughts_Transparency.xml" />
+        <Copy SourceFiles="..\Defs\RecipeDefs\Recipes_Crystal.xml" DestinationFiles="$(ModOutputDir)\Defs\RecipeDefs\Recipes_Crystal.xml" />
+        
+        <Copy SourceFiles="..\Textures\Things\Item\CrystalMaterial.png" DestinationFiles="$(ModOutputDir)\Textures\Things\Item\CrystalMaterial.png" Condition="Exists('..\Textures\Things\Item\CrystalMaterial.png')" />
+        <Copy SourceFiles="..\Textures\Things\Item\CrystalContactLens.png" DestinationFiles="$(ModOutputDir)\Textures\Things\Item\CrystalContactLens.png" Condition="Exists('..\Textures\Things\Item\CrystalContactLens.png')" />
+        <Copy SourceFiles="..\Textures\Things\Item\CrystalGoggles.png" DestinationFiles="$(ModOutputDir)\Textures\Things\Item\CrystalGoggles.png" Condition="Exists('..\Textures\Things\Item\CrystalGoggles.png')" />
+        <Copy SourceFiles="..\Textures\Things\Item\CrystalMagnifier.png" DestinationFiles="$(ModOutputDir)\Textures\Things\Item\CrystalMagnifier.png" Condition="Exists('..\Textures\Things\Item\CrystalMagnifier.png')" />
+        <Copy SourceFiles="..\Textures\Things\Item\CrystalAmulet.png" DestinationFiles="$(ModOutputDir)\Textures\Things\Item\CrystalAmulet.png" Condition="Exists('..\Textures\Things\Item\CrystalAmulet.png')" />
+        <Copy SourceFiles="..\Textures\Things\Item\CrystalTelescope.png" DestinationFiles="$(ModOutputDir)\Textures\Things\Item\CrystalTelescope.png" Condition="Exists('..\Textures\Things\Item\CrystalTelescope.png')" />
+        <Copy SourceFiles="..\Textures\Things\Building\Furniture\TransparentCeilingLamp.png" DestinationFiles="$(ModOutputDir)\Textures\Things\Building\Furniture\TransparentCeilingLamp.png" Condition="Exists('..\Textures\Things\Building\Furniture\TransparentCeilingLamp.png')" />
+        <Copy SourceFiles="..\Textures\Things\Item\Weapons\CrystalAcupointNeedle.png" DestinationFiles="$(ModOutputDir)\Textures\Things\Item\Weapons\CrystalAcupointNeedle.png" Condition="Exists('..\Textures\Things\Item\Weapons\CrystalAcupointNeedle.png')" />
+        
+        <Copy SourceFiles="..\Languages\ChineseSimplified\DefInjected\ThingDef\ThingDefs_Transparent.xml" DestinationFiles="$(ModOutputDir)\Languages\ChineseSimplified\DefInjected\ThingDef\ThingDefs_Transparent.xml" />
+        <Copy SourceFiles="..\Languages\ChineseSimplified\DefInjected\ThingDef\Apparel_Crystal.xml" DestinationFiles="$(ModOutputDir)\Languages\ChineseSimplified\DefInjected\ThingDef\Apparel_Crystal.xml" />
+        <Copy SourceFiles="..\Languages\ChineseSimplified\DefInjected\ThingDef\Items_Crystal.xml" DestinationFiles="$(ModOutputDir)\Languages\ChineseSimplified\DefInjected\ThingDef\Items_Crystal.xml" />
+        <Copy SourceFiles="..\Languages\ChineseSimplified\DefInjected\TerrainDef\TerrainDefs_Transparent.xml" DestinationFiles="$(ModOutputDir)\Languages\ChineseSimplified\DefInjected\TerrainDef\TerrainDefs_Transparent.xml" />
+        <Copy SourceFiles="..\Languages\ChineseSimplified\DefInjected\HediffDef\Hediffs_Crystal.xml" DestinationFiles="$(ModOutputDir)\Languages\ChineseSimplified\DefInjected\HediffDef\Hediffs_Crystal.xml" />
+        <Copy SourceFiles="..\Languages\ChineseSimplified\DefInjected\RecipeDef\Recipes_Crystal.xml" DestinationFiles="$(ModOutputDir)\Languages\ChineseSimplified\DefInjected\RecipeDef\Recipes_Crystal.xml" />
+        <Copy SourceFiles="..\Languages\ChineseSimplified\DefInjected\ResearchProjectDef\ResearchProjectDefs.xml" DestinationFiles="$(ModOutputDir)\Languages\ChineseSimplified\DefInjected\ResearchProjectDef\ResearchProjectDefs.xml" />
+        <Copy SourceFiles="..\Languages\ChineseSimplified\DefInjected\ThoughtDef\ThoughtDefs_Transparent.xml" DestinationFiles="$(ModOutputDir)\Languages\ChineseSimplified\DefInjected\ThoughtDef\ThoughtDefs_Transparent.xml" />
+        <Copy SourceFiles="..\Languages\ChineseSimplified\Keyed\CrystalTech.xml" DestinationFiles="$(ModOutputDir)\Languages\ChineseSimplified\Keyed\CrystalTech.xml" />
+        
+        <Copy SourceFiles="..\Languages\English\DefInjected\ThingDef\ThingDefs_Transparent.xml" DestinationFiles="$(ModOutputDir)\Languages\English\DefInjected\ThingDef\ThingDefs_Transparent.xml" />
+        <Copy SourceFiles="..\Languages\English\DefInjected\ThingDef\Apparel_Crystal.xml" DestinationFiles="$(ModOutputDir)\Languages\English\DefInjected\ThingDef\Apparel_Crystal.xml" />
+        <Copy SourceFiles="..\Languages\English\DefInjected\ThingDef\Items_Crystal.xml" DestinationFiles="$(ModOutputDir)\Languages\English\DefInjected\ThingDef\Items_Crystal.xml" />
+        <Copy SourceFiles="..\Languages\English\DefInjected\TerrainDef\TerrainDefs_Transparent.xml" DestinationFiles="$(ModOutputDir)\Languages\English\DefInjected\TerrainDef\TerrainDefs_Transparent.xml" />
+        <Copy SourceFiles="..\Languages\English\DefInjected\HediffDef\Hediffs_Crystal.xml" DestinationFiles="$(ModOutputDir)\Languages\English\DefInjected\HediffDef\Hediffs_Crystal.xml" />
+        <Copy SourceFiles="..\Languages\English\DefInjected\RecipeDef\Recipes_Crystal.xml" DestinationFiles="$(ModOutputDir)\Languages\English\DefInjected\RecipeDef\Recipes_Crystal.xml" />
+        <Copy SourceFiles="..\Languages\English\DefInjected\ResearchProjectDef\ResearchProjectDefs.xml" DestinationFiles="$(ModOutputDir)\Languages\English\DefInjected\ResearchProjectDef\ResearchProjectDefs.xml" />
+        <Copy SourceFiles="..\Languages\English\DefInjected\ThoughtDef\ThoughtDefs_Transparent.xml" DestinationFiles="$(ModOutputDir)\Languages\English\DefInjected\ThoughtDef\ThoughtDefs_Transparent.xml" />
+        <Copy SourceFiles="..\Languages\English\Keyed\CrystalTech.xml" DestinationFiles="$(ModOutputDir)\Languages\English\Keyed\CrystalTech.xml" />
+        
+        <WriteLinesToFile File="$(ModOutputDir)\About\PublishedFileId.txt" Lines="$(SavedPublishedFileId)" Overwrite="true" Condition="'$(SavedPublishedFileId)' != ''" />
+    </Target>
+</Project>

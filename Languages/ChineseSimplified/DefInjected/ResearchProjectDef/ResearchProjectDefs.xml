@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CrystalTech.label>透晶科技</CrystalTech.label>
+  <CrystalTech.description>学会制造先进的透晶建筑材料，具备透光、防火、气密与自洁特性。</CrystalTech.description>
+  <CrystalAdvanced.label>透晶进阶</CrystalAdvanced.label>
+  <CrystalAdvanced.description>将太阳能晶膜与电力回路集成至透晶结构中，实现自发电墙体、门扉与灯具，并可检测隐形单位。</CrystalAdvanced.description>
+  <CrystalReinforced.label>透晶强化</CrystalReinforced.label>
+  <CrystalReinforced.description>以先进结合技术强化透晶结构，打造近乎坚不可摧的透明墙体与防御工事。</CrystalReinforced.description>
+</LanguageData>

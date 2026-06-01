@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Make_CrystalMaterial.label>制作透晶材料</Make_CrystalMaterial.label>
+  <Make_CrystalMaterial.description>将钢铁和银加工成透明的透晶材料。</Make_CrystalMaterial.description>
+  <Make_CrystalMaterial.jobString>正在制作透晶材料。</Make_CrystalMaterial.jobString>
+
+  <Make_CrystalMaterialBulk.label>制作透晶材料 x20</Make_CrystalMaterialBulk.label>
+  <Make_CrystalMaterialBulk.description>批量将钢铁和银加工成透明的透晶材料。</Make_CrystalMaterialBulk.description>
+  <Make_CrystalMaterialBulk.jobString>正在批量制作透晶材料。</Make_CrystalMaterialBulk.jobString>
+
+</LanguageData>

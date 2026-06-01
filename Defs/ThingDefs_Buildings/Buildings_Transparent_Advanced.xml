@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- 进阶透晶墙 -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>AdvancedTransparentWall</defName>
+    <label>advanced transparent wall</label>
+    <description>An advanced transparent wall made of crystal material, with integrated power transmission, vacuum isolation, self-cleaning surface, solar power generation, and cloaked creature detection. Emits a soft blue glow. Fireproof and highly durable.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <drawStyleCategory>Walls</drawStyleCategory>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <canOverlapZones>false</canOverlapZones>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <drawDamagedOverlay>false</drawDamagedOverlay>
+    <neverMultiSelect>true</neverMultiSelect>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Things/Building/Linked/Wall</texPath>
+      <graphicClass>Graphic_Appearances</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>8</Beauty>
+      <Cleanliness>0.3</Cleanliness>
+    </statBases>
+    <costList>
+      <CrystalMaterial>2</CrystalMaterial>
+      <Silver>1</Silver>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <holdsRoof>true</holdsRoof>
+    <blockLight>false</blockLight>
+    <blockWind>true</blockWind>
+    <designationCategory>Structure</designationCategory>
+    <uiOrder>2014</uiOrder>
+    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+    <replaceTags>
+      <li>Wall</li>
+    </replaceTags>
+    <building>
+      <isAirtight>true</isAirtight>
+      <isWall>true</isWall>
+      <canExchangeVacuum>true</canExchangeVacuum>
+      <relatedBuildCommands>
+        <li>AdvancedTransparentDoor</li>
+        <li>AdvancedTransparentAutodoor</li>
+        <li>TransparentVent</li>
+        <li>CrystalFloorWindow</li>
+      </relatedBuildCommands>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <comps>
+      <li Class="CrystalTech.CompProperties_PowerPlantTransparentWall">
+        <basePowerConsumption>-25</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(128,153,255,0)</glowColor>
+      </li>
+      <li Class="CrystalTech.CompProperties_CrystalDetector">
+        <detectionRadius>15</detectionRadius>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>CrystalAdvanced</li>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 进阶透晶门 -->
+  <ThingDef ParentName="DoorBase">
+    <defName>AdvancedTransparentDoor</defName>
+    <label>advanced transparent door</label>
+    <description>An advanced transparent door made of crystal material, with integrated power transmission, vacuum isolation, self-cleaning surface, solar power generation, and cloaked creature detection. Emits a soft blue glow.</description>
+    <stuffCategories Inherit="False" />
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <graphicData>
+      <texPath>Things/Building/Door/DoorSimple_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/DoorSimple_MenuIcon</uiIconPath>
+    <drawDamagedOverlay>false</drawDamagedOverlay>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>8</Beauty>
+      <Cleanliness>0.3</Cleanliness>
+    </statBases>
+    <costList>
+      <CrystalMaterial>4</CrystalMaterial>
+      <Silver>1</Silver>
+    </costList>
+    <blockLight>false</blockLight>
+    <designationCategory>Structure</designationCategory>
+    <uiOrder>2015</uiOrder>
+    <replaceTags>
+      <li>Door</li>
+    </replaceTags>
+    <building>
+      <isAirtight>true</isAirtight>
+      <canExchangeVacuum>true</canExchangeVacuum>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <blueprintClass>Blueprint_Door</blueprintClass>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Door/Door_Blueprint</texPath>
+      </blueprintGraphicData>
+      <relatedBuildCommands>
+        <li>AdvancedTransparentWall</li>
+      </relatedBuildCommands>
+    </building>
+    <comps>
+      <li Class="CrystalTech.CompProperties_PowerPlantTransparentWall">
+        <basePowerConsumption>-15</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(128,153,255,0)</glowColor>
+      </li>
+      <li Class="CrystalTech.CompProperties_CrystalDetector">
+        <detectionRadius>15</detectionRadius>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>CrystalAdvanced</li>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 进阶透晶自动门 -->
+  <ThingDef ParentName="DoorBase">
+    <defName>AdvancedTransparentAutodoor</defName>
+    <label>advanced transparent autodoor</label>
+    <description>An advanced transparent autodoor made of crystal material, with integrated power transmission, vacuum isolation, self-cleaning surface, solar power generation, and automatic operation. Emits a soft blue glow.</description>
+    <stuffCategories Inherit="False" />
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <graphicData>
+      <texPath>Things/Building/Door/Autodoor_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/Autodoor_MenuIcon</uiIconPath>
+    <drawDamagedOverlay>false</drawDamagedOverlay>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>1100</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>8</Beauty>
+      <Cleanliness>0.3</Cleanliness>
+    </statBases>
+    <costList>
+      <CrystalMaterial>4</CrystalMaterial>
+      <Silver>1</Silver>
+    </costList>
+    <blockLight>false</blockLight>
+    <designationCategory>Structure</designationCategory>
+    <uiOrder>2016</uiOrder>
+    <replaceTags>
+      <li>Door</li>
+    </replaceTags>
+    <building>
+      <isAirtight>true</isAirtight>
+      <canExchangeVacuum>true</canExchangeVacuum>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <blueprintClass>Blueprint_Door</blueprintClass>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Door/Door_Blueprint</texPath>
+      </blueprintGraphicData>
+      <relatedBuildCommands>
+        <li>AdvancedTransparentWall</li>
+        <li>AdvancedTransparentDoor</li>
+      </relatedBuildCommands>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>50</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(128,153,255,0)</glowColor>
+      </li>
+    </comps>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>CrystalAdvanced</li>
+      <li>Electricity</li>
+      <li>Autodoors</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 进阶透晶栅栏 -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>AdvancedTransparentFence</defName>
+    <label>advanced transparent fence</label>
+    <description>An advanced transparent fence made of crystal material, with integrated power transmission and cloaked creature detection. Emits a soft blue glow.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <drawStyleCategory>Defenses</drawStyleCategory>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>80</pathCost>
+    <blockWind>false</blockWind>
+    <fillPercent>0</fillPercent>
+    <drawDamagedOverlay>false</drawDamagedOverlay>
+    <neverMultiSelect>true</neverMultiSelect>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Things/Building/Linked/Fence</texPath>
+      <graphicClass>Graphic_Appearances</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <linkType>Asymmetric</linkType>
+      <linkFlags>
+        <li>Fences</li>
+      </linkFlags>
+      <asymmetricLink>
+        <linkFlags>
+          <li>Wall</li>
+          <li>Rock</li>
+        </linkFlags>
+        <linkToDoors>true</linkToDoors>
+        <drawDoorBorderEast>
+          <color>(0,0,0)</color>
+          <size>(0.04, 0.77)</size>
+          <offset>(0.5, 0, -0.08)</offset>
+        </drawDoorBorderEast>
+        <drawDoorBorderWest>
+          <color>(0,0,0)</color>
+          <size>(0.04, 0.77)</size>
+          <offset>(-0.5, 0, -0.08)</offset>
+        </drawDoorBorderWest>
+      </asymmetricLink>
+      <shadowData>
+        <volume>(0.3, 0.5, 0.3)</volume>
+        <offset>(0,0,-0.23)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.35,0.1,0.3,0.7)</rect>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>10</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>5</Beauty>
+    </statBases>
+    <costList>
+      <CrystalMaterial>2</CrystalMaterial>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Structure</designationCategory>
+    <uiOrder>2017</uiOrder>
+    <uiIconPath>Things/Building/Linked/Fence_MenuIcon</uiIconPath>
+    <replaceTags>
+      <li>Wall</li>
+    </replaceTags>
+    <building>
+      <isInert>true</isInert>
+      <isFence>true</isFence>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <paintable>false</paintable>
+      <relatedBuildCommands>
+        <li>AdvancedTransparentFenceGate</li>
+      </relatedBuildCommands>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/Fence_Blueprint</texPath>
+        <graphicClass>Graphic_Appearances</graphicClass>
+      </blueprintGraphicData>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(128,153,255,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>CrystalAdvanced</li>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 进阶透晶栅栏门 -->
+  <ThingDef ParentName="DoorBase">
+    <defName>AdvancedTransparentFenceGate</defName>
+    <label>advanced transparent fence gate</label>
+    <description>An advanced transparent fence gate made of crystal material, with integrated power transmission. Emits a soft blue glow.</description>
+    <stuffCategories Inherit="False" />
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <graphicData>
+      <texPath>Things/Building/Door/FenceGate_Mover</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <shadowData>
+        <volume>(0.3, 0.5, 0.3)</volume>
+      </shadowData>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/FenceGate_MenuIcon</uiIconPath>
+    <drawDamagedOverlay>false</drawDamagedOverlay>
+    <altitudeLayer>DoorMoveable</altitudeLayer>
+    <blockLight>false</blockLight>
+    <blockWeather>true</blockWeather>
+    <blockWind>false</blockWind>
+    <holdsRoof>false</holdsRoof>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>600</WorkToBuild>
+      <Beauty>5</Beauty>
+      <DoorOpenSpeed>1.15</DoorOpenSpeed>
+    </statBases>
+    <costList>
+      <CrystalMaterial>4</CrystalMaterial>
+    </costList>
+    <designationCategory>Structure</designationCategory>
+    <uiOrder>2018</uiOrder>
+    <replaceTags>
+      <li>Door</li>
+    </replaceTags>
+    <building>
+      <isInert>true</isInert>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <preferConnectingToFences>true</preferConnectingToFences>
+      <paintable>false</paintable>
+      <blueprintClass>Blueprint_Door</blueprintClass>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Door/FenceGate_Blueprint</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+      </blueprintGraphicData>
+      <relatedBuildCommands>
+        <li>AdvancedTransparentFence</li>
+      </relatedBuildCommands>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(128,153,255,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>CrystalAdvanced</li>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

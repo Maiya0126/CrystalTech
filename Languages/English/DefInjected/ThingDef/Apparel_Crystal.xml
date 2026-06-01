@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Apparel_CrystalContactLens.label>crystal contact lens</Apparel_CrystalContactLens.label>
+  <Apparel_CrystalContactLens.description>An advanced lens made of crystal material, virtually invisible when worn. Provides enhanced targeting assistance and predictive movement analysis for melee evasion.</Apparel_CrystalContactLens.description>
+
+  <Apparel_CrystalGoggles.label>crystal goggles</Apparel_CrystalGoggles.label>
+  <Apparel_CrystalGoggles.description>Protective goggles made of crystal material. Enhances vision clarity and shields the mind from psychic interference.</Apparel_CrystalGoggles.description>
+
+  <Apparel_CrystalMagnifier.label>crystal magnifier</Apparel_CrystalMagnifier.label>
+  <Apparel_CrystalMagnifier.description>A precision magnifying lens made of crystal material. Can be carried on the belt and used to examine fine details, improving research and crafting efficiency.</Apparel_CrystalMagnifier.description>
+
+  <Apparel_CrystalAmulet.label>crystal amulet</Apparel_CrystalAmulet.label>
+  <Apparel_CrystalAmulet.description>An amulet carved from crystal material, emitting a faint calming glow. Worn on the waist, it provides mental protection and soothes the mind.</Apparel_CrystalAmulet.description>
+
+  <Apparel_CrystalTelescope.label>crystal telescope</Apparel_CrystalTelescope.label>
+  <Apparel_CrystalTelescope.description>A precision monocular telescope made of crystal material. Carried on the belt, it greatly enhances long-range targeting accuracy.</Apparel_CrystalTelescope.description>
+
+</LanguageData>

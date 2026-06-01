@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Apparel_CrystalContactLens.label>透晶隐形眼镜</Apparel_CrystalContactLens.label>
+  <Apparel_CrystalContactLens.description>用透晶材料制成的先进隐形眼镜，佩戴后几乎不可见。提供增强瞄准辅助和近战闪避预测。</Apparel_CrystalContactLens.description>
+
+  <Apparel_CrystalGoggles.label>透晶护目镜</Apparel_CrystalGoggles.label>
+  <Apparel_CrystalGoggles.description>用透晶材料制成的防护护目镜，增强视觉清晰度并提供精神干扰防护。</Apparel_CrystalGoggles.description>
+
+  <Apparel_CrystalMagnifier.label>透晶放大镜</Apparel_CrystalMagnifier.label>
+  <Apparel_CrystalMagnifier.description>用透晶材料制成的精密放大镜，可挂在腰带上使用，便于观察精细细节，提升研究和制作效率。</Apparel_CrystalMagnifier.description>
+
+  <Apparel_CrystalAmulet.label>透晶护身符</Apparel_CrystalAmulet.label>
+  <Apparel_CrystalAmulet.description>用透晶材料雕刻的护身符，散发微弱的安抚光芒。佩戴在腰部，提供精神保护和心灵抚慰。</Apparel_CrystalAmulet.description>
+
+  <Apparel_CrystalTelescope.label>透晶望远镜</Apparel_CrystalTelescope.label>
+  <Apparel_CrystalTelescope.description>用透晶材料制成的精密单筒望远镜，佩戴在腰部，大幅增强远程瞄准精度。</Apparel_CrystalTelescope.description>
+
+</LanguageData>

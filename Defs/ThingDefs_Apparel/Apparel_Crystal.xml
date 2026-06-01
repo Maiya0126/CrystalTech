@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- 透晶隐形眼镜 -->
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_CrystalContactLens</defName>
+    <stuffCategories Inherit="False" />
+    <label>crystal contact lens</label>
+    <description>An advanced lens made of crystal material, virtually invisible when worn. Provides enhanced targeting assistance and predictive movement analysis for melee evasion.</description>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/CrystalContactLens</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>0.5</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <Mass>0.01</Mass>
+      <MarketValue>1200</MarketValue>
+      <WorkToMake>8000</WorkToMake>
+      <Beauty>0</Beauty>
+    </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+      <MeleeDodgeChance>0.1</MeleeDodgeChance>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Eyes</li>
+      </bodyPartGroups>
+      <layers>
+        <li>EyeCover</li>
+      </layers>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>1</glowRadius>
+        <glowColor>(200,200,195,0)</glowColor>
+      </li>
+    </comps>
+    <costList>
+      <CrystalMaterial>5</CrystalMaterial>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Gold>2</Gold>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <researchPrerequisites>
+      <li>CrystalTech</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 透晶护目镜 -->
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_CrystalGoggles</defName>
+    <stuffCategories Inherit="False" />
+    <label>crystal goggles</label>
+    <description>Protective goggles made of crystal material. Enhances vision clarity and shields the mind from psychic interference.</description>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/CrystalGoggles</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>0.6</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Mass>0.1</Mass>
+      <MarketValue>800</MarketValue>
+      <WorkToMake>6000</WorkToMake>
+      <Beauty>0</Beauty>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivityOffset>-0.15</PsychicSensitivityOffset>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Eyes</li>
+      </bodyPartGroups>
+      <layers>
+        <li>EyeCover</li>
+      </layers>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>CrystalGogglesHediff</hediff>
+        <part>Head</part>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>1</glowRadius>
+        <glowColor>(200,200,195,0)</glowColor>
+      </li>
+    </comps>
+    <costList>
+      <CrystalMaterial>3</CrystalMaterial>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers Inherit="False">
+        <li>TableMachining</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <researchPrerequisites>
+      <li>CrystalTech</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 透晶放大镜 -->
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_CrystalMagnifier</defName>
+    <stuffCategories Inherit="False" />
+    <label>crystal magnifier</label>
+    <description>A precision magnifying lens made of crystal material. Can be carried on the belt and used to examine fine details, improving research and crafting efficiency.</description>
+    <techLevel>Industrial</techLevel>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/CrystalMagnifier</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>0.6</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Mass>0.2</Mass>
+      <MarketValue>600</MarketValue>
+      <WorkToMake>4000</WorkToMake>
+      <Beauty>0</Beauty>
+    </statBases>
+    <equippedStatOffsets>
+      <ResearchSpeed>0.15</ResearchSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+        <li>Torso</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>1</glowRadius>
+        <glowColor>(200,200,195,0)</glowColor>
+      </li>
+    </comps>
+    <costList>
+      <CrystalMaterial>4</CrystalMaterial>
+      <Silver>20</Silver>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers Inherit="False">
+        <li>TableMachining</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <researchPrerequisites>
+      <li>CrystalTech</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 透晶护身符 -->
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_CrystalAmulet</defName>
+    <stuffCategories Inherit="False" />
+    <label>crystal amulet</label>
+    <description>An amulet carved from crystal material, emitting a faint calming glow. Worn on the waist, it provides mental protection and soothes the mind.</description>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/CrystalAmulet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>0.5</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <Mass>0.15</Mass>
+      <MarketValue>1000</MarketValue>
+      <WorkToMake>5000</WorkToMake>
+      <Beauty>2</Beauty>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivityOffset>-0.15</PsychicSensitivityOffset>
+      <MentalBreakThreshold>-0.05</MentalBreakThreshold>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+        <li>Torso</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(200,200,195,0)</glowColor>
+      </li>
+    </comps>
+    <costList>
+      <CrystalMaterial>4</CrystalMaterial>
+      <Jade>10</Jade>
+      <Gold>2</Gold>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <researchPrerequisites>
+      <li>CrystalTech</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 透晶望远镜 -->
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_CrystalTelescope</defName>
+    <stuffCategories Inherit="False" />
+    <label>crystal telescope</label>
+    <description>A precision monocular telescope made of crystal material. Carried on the belt, it greatly enhances long-range targeting accuracy.</description>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/CrystalTelescope</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>0.7</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Mass>0.3</Mass>
+      <MarketValue>1500</MarketValue>
+      <WorkToMake>10000</WorkToMake>
+      <Beauty>0</Beauty>
+    </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+        <li>Torso</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>1</glowRadius>
+        <glowColor>(200,200,195,0)</glowColor>
+      </li>
+    </comps>
+    <costList>
+      <CrystalMaterial>6</CrystalMaterial>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Silver>30</Silver>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <researchPrerequisites>
+      <li>CrystalTech</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

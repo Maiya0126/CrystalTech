@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CrystalMaterial.label>crystal material</CrystalMaterial.label>
+  <CrystalMaterial.description>A transparent crystalline material with unique optical and conductive properties. Used to construct advanced transparent buildings and equipment. Its self-cleaning surface and light-transmitting capabilities make it ideal for high-tech construction.</CrystalMaterial.description>
+
+  <Crystalline.label>crystalline</Crystalline.label>
+
+</LanguageData>

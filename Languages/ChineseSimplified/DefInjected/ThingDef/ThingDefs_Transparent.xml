@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <TransparentWall.label>透晶墙</TransparentWall.label>
+  <TransparentWall.description>用透晶材料制成的墙，允许光线穿透同时保持结构完整。散发微弱的自然光泽。防火且具有良好的隔热性能。</TransparentWall.description>
+
+  <TransparentDoor.label>透晶门</TransparentDoor.label>
+  <TransparentDoor.description>用透晶材料制成的门，允许光线穿透，散发柔和的微光。防火且隔热。</TransparentDoor.description>
+
+  <TransparentFence.label>透晶栅栏</TransparentFence.label>
+  <TransparentFence.description>用透晶材料制成的栅栏，光线可以自由穿透，散发柔和的微光。</TransparentFence.description>
+
+  <TransparentFenceGate.label>透晶栅栏门</TransparentFenceGate.label>
+  <TransparentFenceGate.description>用透晶材料制成的栅栏门，光线可以自由穿透，散发柔和的微光。</TransparentFenceGate.description>
+
+  <TransparentVent.label>透晶通风口</TransparentVent.label>
+  <TransparentVent.description>用透晶材料制成的通风口，用于房间之间温度平衡。允许光线穿透，散发柔和的微光。</TransparentVent.description>
+
+  <TransparentTableRect.label>透晶小桌</TransparentTableRect.label>
+  <TransparentTableRect.description>以活晶雕琢而成的防火小桌，桌面宛如一泓静水，流光溢彩。</TransparentTableRect.description>
+
+  <TransparentTableSquare.label>透晶大桌</TransparentTableSquare.label>
+  <TransparentTableSquare.description>以活晶雕琢而成的防火大桌，桌面宛如一泓静水，流光溢彩。</TransparentTableSquare.description>
+
+  <TransparentDiningChair.label>透晶餐椅</TransparentDiningChair.label>
+  <TransparentDiningChair.description>以一簇水晶花雕琢而成的防火餐椅，触手沁凉却令人安心。舒适优雅，仿佛悬浮于柔光之中。</TransparentDiningChair.description>
+
+  <TransparentArmchair.label>透晶扶手椅</TransparentArmchair.label>
+  <TransparentArmchair.description>经晶体折射工艺打造的防火深座扶手椅，奢华与空灵交织其间。沉入其中，让微光消融一天的疲惫。</TransparentArmchair.description>
+
+  <TransparentBed.label>透晶单人床</TransparentBed.label>
+  <TransparentBed.description>以晶丝编织而成的防火床榻，将安眠之人包裹在柔和的光茧之中。晶格之力温润流转，加速伤愈、增益免疫。在此小憩，梦境仿佛便顺着晶格流淌。但晶体脆弱，不耐冲击。</TransparentBed.description>
+
+  <TransparentDoubleBed.label>透晶双人床</TransparentDoubleBed.label>
+  <TransparentDoubleBed.description>以晶丝编织而成的防火双人床榻，将两位安眠之人共同包裹在柔和的光茧之中。晶格之力温润流转，加速伤愈、增益免疫。在此小憩，梦境仿佛便顺着晶格流淌。但晶体脆弱，不耐冲击。</TransparentDoubleBed.description>
+
+  <TransparentBarricade.label>透晶掩体</TransparentBarricade.label>
+  <TransparentBarricade.description>防火透晶掩体，提供优秀的掩护且允许光线穿透。比沙袋美观得多。</TransparentBarricade.description>
+
+  <TransparentShelf.label>透晶架子</TransparentShelf.label>
+  <TransparentShelf.description>防火晶质储架，存放其中的物品宛若悬浮于凝固之光，永不变质、不褪色。整洁有序，静默生辉。</TransparentShelf.description>
+
+  <TransparentSmallShelf.label>透晶小架子</TransparentSmallShelf.label>
+  <TransparentSmallShelf.description>小型防火晶质储架，存放其中的物品宛若悬浮于凝固之光，永不变质、不褪色。整洁有序，静默生辉。</TransparentSmallShelf.description>
+
+  <TransparentOutfitStand.label>透晶装备架</TransparentOutfitStand.label>
+  <TransparentOutfitStand.description>防火晶质人形架，将穿搭化为橱窗中的展品，优雅而晶莹。</TransparentOutfitStand.description>
+
+  <CrystalFloorWindow.label>透晶落地窗</CrystalFloorWindow.label>
+  <CrystalFloorWindow.description>用透晶材料制成的落地窗，可放置在已有墙上创建双向透光的观景窗口。防火且气密。</CrystalFloorWindow.description>
+
+  <AdvancedTransparentWall.label>进阶透晶墙</AdvancedTransparentWall.label>
+  <AdvancedTransparentWall.description>用透晶材料制成的高级墙，集成电力传输、隔绝真空、自洁表面、太阳能发电和隐形生物检测功能。散发柔和的蓝色微光。防火且坚固耐用。</AdvancedTransparentWall.description>
+
+  <AdvancedTransparentDoor.label>进阶透晶门</AdvancedTransparentDoor.label>
+  <AdvancedTransparentDoor.description>用透晶材料制成的高级门，集成电力传输、隔绝真空、自洁表面、太阳能发电和隐形生物检测功能。散发柔和的蓝色微光。</AdvancedTransparentDoor.description>
+
+  <AdvancedTransparentAutodoor.label>进阶透晶自动门</AdvancedTransparentAutodoor.label>
+  <AdvancedTransparentAutodoor.description>用透晶材料制成的高级自动门，集成电力传输、隔绝真空、自洁表面、太阳能发电和自动开闭功能。散发柔和的蓝色微光。</AdvancedTransparentAutodoor.description>
+
+  <AdvancedTransparentFence.label>进阶透晶栅栏</AdvancedTransparentFence.label>
+  <AdvancedTransparentFence.description>用透晶材料制成的高级栅栏，集成电力传输和隐形生物检测功能。散发柔和的蓝色微光。</AdvancedTransparentFence.description>
+
+  <AdvancedTransparentFenceGate.label>进阶透晶栅栏门</AdvancedTransparentFenceGate.label>
+  <AdvancedTransparentFenceGate.description>用透晶材料制成的高级栅栏门，集成电力传输功能。散发柔和的蓝色微光。</AdvancedTransparentFenceGate.description>
+
+  <TransparentCeilingLamp.label>透晶吸顶灯</TransparentCeilingLamp.label>
+  <TransparentCeilingLamp.description>防火透晶吸顶灯，安装于头顶，不占用地面空间。散发柔和的蓝色微光，提供清洁明亮的照明。内置太阳能透晶自发电。可检测隐形生物。</TransparentCeilingLamp.description>
+
+  <ReinforcedTransparentWall.label>强化透晶墙</ReinforcedTransparentWall.label>
+  <ReinforcedTransparentWall.description>用先进结合技术强化的超耐久防火透晶墙，近乎坚不可摧且完全透光。可检测隐形生物。散发温暖的金色微光。气密且美观。</ReinforcedTransparentWall.description>
+
+  <ReinforcedTransparentDoor.label>强化透晶门</ReinforcedTransparentDoor.label>
+  <ReinforcedTransparentDoor.description>用先进结合技术强化的超耐久透晶门，近乎坚不可摧且完全透光。可检测隐形生物。散发温暖的金色微光。</ReinforcedTransparentDoor.description>
+
+  <ReinforcedTransparentFence.label>强化透晶栅栏</ReinforcedTransparentFence.label>
+  <ReinforcedTransparentFence.description>用先进结合技术强化的超耐久透晶栅栏。光线自由穿透。可检测隐形生物。散发温暖的金色微光。</ReinforcedTransparentFence.description>
+
+  <ReinforcedTransparentFenceGate.label>强化透晶栅栏门</ReinforcedTransparentFenceGate.label>
+  <ReinforcedTransparentFenceGate.description>用先进结合技术强化的超耐久透晶栅栏门。光线自由穿透。散发温暖的金色微光。</ReinforcedTransparentFenceGate.description>
+
+  <CrystalLongSword.label>透晶长剑</CrystalLongSword.label>
+  <CrystalLongSword.description>以透晶锻成的长剑，轻若无物却锋利至极。刃出如风，目光未及而血已流。</CrystalLongSword.description>
+
+  <CrystalSpear.label>透晶长矛</CrystalSpear.label>
+  <CrystalSpear.description>透晶矛尖如针刺纸，纵是机甲的合金装甲也万难抵挡其贯穿之力。克机械族利器。</CrystalSpear.description>
+
+  <CrystalGreatBow.label>透晶大弓</CrystalGreatBow.label>
+  <CrystalGreatBow.description>以透晶丝为弦的大弓，箭矢为水晶碎片。张弓放箭之速为寻常大弓两倍，破空而至，凌厉无比。</CrystalGreatBow.description>
+
+  <CrystalDivineNeedle.label>透晶神针</CrystalDivineNeedle.label>
+  <CrystalDivineNeedle.description>以透晶铸成的神针，洞悉肉身之意。一触即令目标陷入深度麻醉——友军得晶能再生之愈，敌手遭血脉逆乱之苦。</CrystalDivineNeedle.description>
+
+  <Apparel_CrystalShield.label>透晶盾</Apparel_CrystalShield.label>
+  <Apparel_CrystalShield.description>以透晶格编织的轻盾，以晶格精准折射飞射之物。己方射击可穿透盾面，敌方弹矢悉数偏转。脆弱于电磁脉冲。</Apparel_CrystalShield.description>
+
+  <TransparentSculptureSmall.label>透晶小型雕塑</TransparentSculptureSmall.label>
+  <TransparentSculptureSmall.description>以活晶雕琢的小型艺术品，通透身姿捕捉光华，如凝固的星芒。永不着火，永恒澄澈。</TransparentSculptureSmall.description>
+
+  <TransparentSculptureLarge.label>透晶大型雕塑</TransparentSculptureLarge.label>
+  <TransparentSculptureLarge.description>以活晶雕琢的大型艺术品，晶莹之躯折射出棱彩流瀑。永不着火，永恒辉光。</TransparentSculptureLarge.description>
+
+  <TransparentSculptureGrand.label>透晶巨大雕塑</TransparentSculptureGrand.label>
+  <TransparentSculptureGrand.description>以活晶雕琢的宏伟巨作，通体透光的巍峨身姿将整间屋子浸润于棱彩之中。永不着火，永恒晶艺之碑。</TransparentSculptureGrand.description>
+
+</LanguageData>

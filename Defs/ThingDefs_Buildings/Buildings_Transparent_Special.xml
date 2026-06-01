@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- 透晶涂层地板 -->
+  <TerrainDef ParentName="FloorBase">
+    <defName>TransparentCoatingFloor</defName>
+    <label>transparent coating floor</label>
+    <description>A crystal-coated floor with self-cleaning properties. Its translucent surface is easy to clean and provides excellent hygiene. Ideal for hospitals and laboratories.</description>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>Walkable</li>
+    </affordances>
+    <canEverTerraform>false</canEverTerraform>
+    <color>(0.75, 0.85, 0.9)</color>
+    <constructEffect>ConstructMetal</constructEffect>
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <fertility>0</fertility>
+    <isPaintable>false</isPaintable>
+    <layerable>true</layerable>
+    <renderPrecedence>244</renderPrecedence>
+    <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+    <statBases>
+      <WorkToBuild>900</WorkToBuild>
+      <Beauty>3</Beauty>
+      <Cleanliness>0.6</Cleanliness>
+      <CleaningTimeFactor>0.5</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <CrystalMaterial>4</CrystalMaterial>
+    </costList>
+    <designationCategory>Floors</designationCategory>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <researchPrerequisites>
+      <li>CrystalTech</li>
+    </researchPrerequisites>
+  </TerrainDef>
+
+  <!-- 透晶吸顶灯（进阶版） -->
+  <ThingDef ParentName="LampBase">
+    <defName>TransparentCeilingLamp</defName>
+    <label>transparent ceiling lamp</label>
+    <description>A sleek transparent lamp made of reinforced crystal material. Mounts on the ceiling providing clean, bright illumination without occupying floor space. Self-powered by integrated solar crystal. Detects cloaked creatures. Fireproof.</description>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Standable</passability>
+    <fillPercent>0</fillPercent>
+    <pathCost>0</pathCost>
+    <canOverlapZones>true</canOverlapZones>
+    <clearBuildingArea>false</clearBuildingArea>
+    <graphicData>
+      <texPath>Things/Building/Furniture/TransparentCeilingLamp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawOffset>(0,0,0.3)</drawOffset>
+    </graphicData>
+    <drawDamagedOverlay>false</drawDamagedOverlay>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>2</Mass>
+      <Flammability>0</Flammability>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>8</Beauty>
+      <Cleanliness>0.3</Cleanliness>
+    </statBases>
+    <costList>
+      <CrystalMaterial>3</CrystalMaterial>
+      <Steel>10</Steel>
+    </costList>
+    <building>
+      <isEdifice>false</isEdifice>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+    </building>
+    <comps>
+      <li Class="CrystalTech.CompProperties_PowerPlantTransparentWall">
+        <basePowerConsumption>-10</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(128,153,255,0)</glowColor>
+      </li>
+      <li Class="CrystalTech.CompProperties_CrystalDetector">
+        <detectionRadius>10</detectionRadius>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>CrystalAdvanced</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 透晶落地窗 -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>CrystalFloorWindow</defName>
+    <label>crystal floor window</label>
+    <description>A floor-to-ceiling transparent window made of crystal material. Can be placed over existing walls to create a see-through window that lets light pass through from both sides. Fireproof and airtight.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <canOverlapZones>false</canOverlapZones>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <drawDamagedOverlay>false</drawDamagedOverlay>
+    <graphicData>
+      <texPath>Things/Building/Linked/Wall</texPath>
+      <graphicClass>Graphic_Appearances</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>300</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>10</Beauty>
+    </statBases>
+    <costList>
+      <CrystalMaterial>1</CrystalMaterial>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <holdsRoof>true</holdsRoof>
+    <blockLight>false</blockLight>
+    <blockWind>true</blockWind>
+    <designationCategory>Structure</designationCategory>
+    <uiOrder>2050</uiOrder>
+    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+    <replaceTags>
+      <li>Wall</li>
+    </replaceTags>
+    <building>
+      <isAirtight>true</isAirtight>
+      <isWall>true</isWall>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <canExchangeVacuum>true</canExchangeVacuum>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(200,200,195,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>CrystalTech</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 透晶桥 -->
+  <TerrainDef ParentName="BridgeBase">
+    <defName>TransparentBridge</defName>
+    <label>transparent bridge</label>
+    <description>A transparent bridge made of crystal material. Can be built over water. Crystal structures are extremely durable, fireproof, and let light pass through to the water below. Supports heavy structures.</description>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>Walkable</li>
+    </affordances>
+    <autoRebuildable>true</autoRebuildable>
+    <bridge>true</bridge>
+    <bridgePropsPath>Terrain/Misc/HeavyBridgeProps</bridgePropsPath>
+    <color>(0.75, 0.85, 0.9)</color>
+    <constructEffect>ConstructMetal</constructEffect>
+    <costList>
+      <CrystalMaterial>3</CrystalMaterial>
+    </costList>
+    <cropIcon>false</cropIcon>
+    <designationCategory>Structure</designationCategory>
+    <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+    <destroyEffect>Bridge_Collapse</destroyEffect>
+    <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+    <destroyOnBombDamageThreshold>80</destroyOnBombDamageThreshold>
+    <drawStyleCategory>Foundations</drawStyleCategory>
+    <edgeType>Hard</edgeType>
+    <fertility>0</fertility>
+    <isFoundation>true</isFoundation>
+    <isPaintable>false</isPaintable>
+    <layerable>true</layerable>
+    <preventCraters>true</preventCraters>
+    <renderPrecedence>400</renderPrecedence>
+    <spaceBridgePropsPath>Terrain/Misc/HeavyBridgeSpaceProps</spaceBridgePropsPath>
+    <statBases>
+      <WorkToBuild>2500</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>5</Beauty>
+    </statBases>
+    <tags>
+      <li>Floor</li>
+    </tags>
+    <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+    <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+    <uiIconPath>Terrain/Misc/HeavyBridge_MenuIcon</uiIconPath>
+    <researchPrerequisites>
+      <li>CrystalTech</li>
+      <li>HeavyBridges</li>
+    </researchPrerequisites>
+  </TerrainDef>
+
+</Defs>

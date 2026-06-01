@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Crystal Tech 透晶科技</name>
+	<author>Maiya0126</author>
+	<packageId>Maiya.CrystalTech</packageId>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+
+	<description>
+		[h1]Crystal Tech 透晶科技[/h1]
+		[b]透晶科技 - 以晶筑居,光居其中[/b]
+		
+		一位麦姓大叔实在看不下去殖民地的居住条件,四面石头墙,暗无天日,上个厕所都得摸黑,简直是在坐牢。于是他捡了块陨石里出来的透亮晶体,捣鼓出了透晶材料,造出了透光的墙和门,让阳光洒进每一间屋子。后来他越玩越大,往晶格电路里塞了太阳能薄膜搞出进阶版,又把晶体烧到近乎坚不可摧弄出强化版。至于透晶装备?那是他差点被隔壁部落一箭射中眼睛之后追加的。后来他发现透晶还能做针,点穴一扎人就倒,医疗一扎人就活。甚至用晶格编了面盾,说"这下连箭都不用躲了"。
+		
+		[b]核心特色:[/b]
+		- [b]透明渲染[/b] - 墙/门/栅栏实时半透明,可调透明度
+		- [b]透光系统[/b] - 室内接收室外光照,植物可生长
+		- [b]通透感心情[/b] - 透晶房间心情加成; [b]温室加成[/b] - 植物生长+10%
+		- [b]完全防火[/b]; [b]成就系统[/b] - 25/50/100座里程碑心情
+		- [b]MOD设置[/b] - 透明度/心情/透光/产量开关
+		- [b]透晶装备[/b] - 6饰品+盾,兼容外星种族(HAR); [b]反隐形检测[/b](需Anomaly)
+		
+		[b]普通透晶系列(研究:透晶科技)[/b]
+		白色微光 / 透光,防火,气密,抗真空
+		- 透晶墙/门/栅栏/栅栏门/通风口
+		- 小桌/大桌/餐椅/扶手椅/单人床/双人床/架子/小架子/掩体/装备架(需Odyssey)/3种雕塑
+		
+		[b]透晶武器:[/b] 长剑/长矛/大弓/神针(命中麻醉,友军再生,敌军失血)
+		[b]透晶装备:[/b] 隐形眼镜/护目镜/放大镜/护身符/望远镜/透晶盾
+		
+		其他: 涂层地板/落地窗/桥
+		
+		[b]进阶透晶系列(研究:透晶进阶)[/b]
+		蓝色微光 / 自发电,传电,清洁+0.3,反隐形(半径15)
+		- 进阶透晶墙(25W)/门(15W)/自动门(50W)/栅栏/栅栏门/吸顶灯(10W)
+		
+		[b]强化透晶系列(研究:透晶强化)[/b]
+		金色微光 / 近万HP,清洁+0.5,抗真空,反隐形(半径20)
+		- 强化透晶墙(9999HP,50W)/门(5000HP,30W)/栅栏(3000HP)/栅栏门(2000HP)
+		
+		[b]科技路线:[/b]
+		1. 研究"透晶科技" -> 解锁普通建筑+装备+武器
+		2. 研究"电力"+"透晶进阶" -> 解锁进阶建筑+吸顶灯
+		3. 研究"精密加工"+"透晶强化" -> 解锁强化建筑
+		
+		如果你觉得不错的话,可以去 爱发电 支持大叔,随缘随缘~ https://afdian.com/a/maiya0126
+		If you enjoy what I do, consider supporting me on Ko-fi! https://ko-fi.com/maiya0126
+		
+		[h1]Crystal Tech[/h1]
+		
+		[b]Crystal Tech - Dwelling in Light[/b]
+		
+		One Uncle Mai couldn't stand the colony's living conditions - four stone walls, pitch black inside. So he picked up a translucent crystal from a meteorite, built walls and doors that let sunlight pour into every room. Then he embedded solar film for the Advanced tier, and baked it nearly indestructible for the Reinforced tier. He also made crystal equipment after nearly catching an arrow to the eye, and a divine needle - one strike to anesthetize, regenerating allies and bleeding foes. He even wove a crystal shield, declaring "Now I don't even need to dodge arrows."
+		
+		[b]Core Features:[/b]
+		- [b]Transparent Rendering[/b] - Semi-transparent walls/doors/fences, adjustable opacity
+		- [b]Light Transmission[/b] - Indoor rooms receive outdoor light, plants can grow
+		- [b]Transparency Mood[/b] - Mood bonus in crystal rooms; [b]Greenhouse Bonus[/b] - +10% plant growth
+		- [b]Fully Fireproof[/b]; [b]Achievement System[/b] - Milestone moods at 25/50/100 buildings
+		- [b]Mod Settings[/b] - Opacity slider, toggles, yield multiplier
+		- [b]Crystal Equipment[/b] - 6 accessories + shield, HAR compatible; [b]Anti-Stealth Detection[/b] (Anomaly DLC)
+		
+		[b]Basic Series[/b] (Research: Crystal Tech) - White glow, transparent, fireproof, airtight
+		- Wall/Door/Fence/Fence Gate/Vent/Tables/Chairs/Beds/Shelves/Barricade/Sculptures/Outfit Stand(Odyssey DLC)
+		
+		[b]Crystal Weapons:[/b] Longsword/Spear/Greatbow/Divine Needle(anesthetize on hit)
+		[b]Crystal Equipment:[/b] Contact Lens/Goggles/Magnifier/Amulet/Telescope/Crystal Shield
+		Other: Coating Floor, Floor Window, Bridge
+		
+		[b]Advanced Series[/b] (Research: Crystal Advanced) - Blue glow, self-powering, anti-stealth(r15)
+		- Wall(25W)/Door(15W)/Autodoor(50W)/Fence/Fence Gate/Ceiling Lamp(10W)
+		
+		[b]Reinforced Series[/b] (Research: Crystal Reinforcement) - Gold glow, 10K HP, anti-stealth(r20)
+		- Wall(9999HP,50W)/Door(5000HP,30W)/Fence(3000HP)/Fence Gate(2000HP)
+	</description>
+
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases</downloadUrl>
+		</li>
+	</modDependencies>
+
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
+		<li>Ludeon.RimWorld.Odyssey</li>
+		<li>brrainz.harmony</li>
+	</loadAfter>
+</ModMetaData>

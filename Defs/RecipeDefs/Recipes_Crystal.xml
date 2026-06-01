@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- 透晶合成 - 在加工台 -->
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>Make_CrystalMaterial</defName>
+    <label>make crystal material</label>
+    <description>Process steel and silver into transparent crystal material.</description>
+    <jobString>Making crystal material.</jobString>
+    <workAmount>800</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>Silver</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CrystalMaterial>5</CrystalMaterial>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <researchPrerequisite>CrystalTech</researchPrerequisite>
+  </RecipeDef>
+
+  <!-- 透晶合成 - 大量生产 -->
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>Make_CrystalMaterialBulk</defName>
+    <label>make crystal material x20</label>
+    <description>Process steel and silver into transparent crystal material in bulk.</description>
+    <jobString>Making crystal material in bulk.</jobString>
+    <workAmount>2500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>Silver</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CrystalMaterial>20</CrystalMaterial>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <researchPrerequisite>CrystalTech</researchPrerequisite>
+  </RecipeDef>
+
+</Defs>

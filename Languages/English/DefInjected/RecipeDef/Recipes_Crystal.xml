@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Make_CrystalMaterial.label>make crystal material</Make_CrystalMaterial.label>
+  <Make_CrystalMaterial.description>Process steel and silver into transparent crystal material.</Make_CrystalMaterial.description>
+  <Make_CrystalMaterial.jobString>Making crystal material.</Make_CrystalMaterial.jobString>
+
+  <Make_CrystalMaterialBulk.label>make crystal material x20</Make_CrystalMaterialBulk.label>
+  <Make_CrystalMaterialBulk.description>Process steel and silver into transparent crystal material in bulk.</Make_CrystalMaterialBulk.description>
+  <Make_CrystalMaterialBulk.jobString>Making crystal material in bulk.</Make_CrystalMaterialBulk.jobString>
+
+</LanguageData>

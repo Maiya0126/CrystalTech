@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <HediffDef>
+    <defName>CrystalGogglesHediff</defName>
+    <label>crystal goggles vision</label>
+    <description>Enhanced vision from crystal goggles.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped"/>
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>CrystalItemGlowHediff</defName>
+    <label>crystal glow</label>
+    <description>A soft crystal glow emanates from equipped crystal items.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+    <comps />
+  </HediffDef>
+
+  <HediffDef>
+    <defName>CrystalRegenerationHediff</defName>
+    <label>crystal regeneration</label>
+    <description>Crystalline regenerative energy courses through the body, accelerating wound healing and boosting immunity.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <regeneration>80</regeneration>
+        <naturalHealingFactor>3.0</naturalHealingFactor>
+        <statOffsets>
+          <ImmunityGainSpeed>0.5</ImmunityGainSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>60000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+  </HediffDef>
+
+</Defs>

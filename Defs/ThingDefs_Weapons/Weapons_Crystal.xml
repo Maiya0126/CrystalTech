@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- 透晶箭矢 -->
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Arrow_Crystal</defName>
+    <label>crystal arrow</label>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <category>Projectile</category>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+      <texPath>Things/Projectile/Arrow_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(200,220,255)</color>
+    </graphicData>
+    <neverMultiSelect>True</neverMultiSelect>
+    <projectile>
+      <damageDef>Arrow</damageDef>
+      <damageAmountBase>44</damageAmountBase>
+      <stoppingPower>2</stoppingPower>
+      <armorPenetrationBase>0.3</armorPenetrationBase>
+      <speed>60</speed>
+    </projectile>
+    <thingClass>Bullet</thingClass>
+    <tickerType>Normal</tickerType>
+    <useHitPoints>False</useHitPoints>
+  </ThingDef>
+
+  <!-- 透晶剑 -->
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>CrystalLongSword</defName>
+    <label>crystal longsword</label>
+    <description>A longsword forged from trans-crystal, impossibly light and razor-thin. Its blade moves with startling speed, carving through flesh before the eye can follow.</description>
+    <allowedArchonexusCount>1</allowedArchonexusCount>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>true</alwaysHaulable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <category>Item</category>
+    <comps>
+      <li Class="CompProperties_Forbiddable"></li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li Class="CompProperties_Styleable"></li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(200,200,195,0)</glowColor>
+      </li>
+    </comps>
+    <costList>
+      <CrystalMaterial>3</CrystalMaterial>
+      <Steel>1</Steel>
+    </costList>
+    <drawerType>MapMeshOnly</drawerType>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <equipmentType>Primary</equipmentType>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+      <texPath>Things/Item/Equipment/WeaponMelee/LongSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <pathCost>14</pathCost>
+    <possessionCount>1</possessionCount>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Silver</li>
+          <li>Gold</li>
+          <li>WoodLog</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+      <researchPrerequisite>CrystalTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>430</displayPriority>
+    </recipeMaker>
+    <relicChance>2</relicChance>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <smeltable>false</smeltable>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>5</Beauty>
+      <SellPriceFactor>0.2</SellPriceFactor>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>1</Mass>
+    </statBases>
+    <stuffCategories Inherit="False" />
+    <techLevel>Spacer</techLevel>
+    <thingCategories Inherit="False">
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <thingClass>ThingWithComps</thingClass>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <tickerType>Never</tickerType>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.3</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+      <power>66</power>
+      <armorPenetration>0.4</armorPenetration>
+      <cooldownTime>1.73</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+      <power>66</power>
+      <armorPenetration>0.4</armorPenetration>
+        <cooldownTime>1.73</cooldownTime>
+      </li>
+    </tools>
+    <tradeTags>
+      <li>WeaponMelee</li>
+    </tradeTags>
+    <useHitPoints>true</useHitPoints>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+      <li>LongSword</li>
+    </weaponTags>
+  </ThingDef>
+
+  <!-- 透晶长矛 -->
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>CrystalSpear</defName>
+    <label>crystal spear</label>
+    <description>A spear tipped with a trans-crystal point that punches through armor like paper. Especially effective against mechanoids, whose plating offers little resistance to its piercing edge.</description>
+    <allowedArchonexusCount>1</allowedArchonexusCount>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>true</alwaysHaulable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <category>Item</category>
+    <comps>
+      <li Class="CompProperties_Forbiddable"></li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li Class="CompProperties_Styleable"></li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(200,200,195,0)</glowColor>
+      </li>
+    </comps>
+    <costList>
+      <CrystalMaterial>4</CrystalMaterial>
+      <WoodLog>2</WoodLog>
+    </costList>
+    <drawerType>MapMeshOnly</drawerType>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <equipmentType>Primary</equipmentType>
+    <equippedAngleOffset>-25</equippedAngleOffset>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+      <texPath>Things/Item/Equipment/WeaponMelee/Spear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <pathCost>14</pathCost>
+    <possessionCount>1</possessionCount>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Silver</li>
+          <li>Gold</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+      <researchPrerequisite>CrystalTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>340</displayPriority>
+    </recipeMaker>
+    <relicChance>1</relicChance>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <smeltable>false</smeltable>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>5</Beauty>
+      <SellPriceFactor>0.2</SellPriceFactor>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>1.5</Mass>
+    </statBases>
+    <stuffCategories Inherit="False" />
+    <techLevel>Spacer</techLevel>
+    <thingCategories Inherit="False">
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <thingClass>ThingWithComps</thingClass>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <tickerType>Never</tickerType>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>56</power>
+        <armorPenetration>0.9</armorPenetration>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <tradeTags>
+      <li>WeaponMelee</li>
+    </tradeTags>
+    <useHitPoints>true</useHitPoints>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>NeolithicMeleeAdvanced</li>
+      <li>MedievalMeleeAdvanced</li>
+      <li>Spear</li>
+    </weaponTags>
+  </ThingDef>
+
+  <!-- 透晶大弓 -->
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>CrystalGreatBow</defName>
+    <label>crystal greatbow</label>
+    <description>A greatbow strung with trans-crystal filament, firing crystal-shard arrows at devastating speed. Draws and looses twice as fast as a conventional greatbow.</description>
+    <allowedArchonexusCount>1</allowedArchonexusCount>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>true</alwaysHaulable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <category>Item</category>
+    <comps>
+      <li Class="CompProperties_Forbiddable"></li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li Class="CompProperties_Styleable"></li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(200,200,195,0)</glowColor>
+      </li>
+    </comps>
+    <costList>
+      <CrystalMaterial>5</CrystalMaterial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <drawerType>MapMeshOnly</drawerType>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <equipmentType>Primary</equipmentType>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+      <texPath>Things/Item/Equipment/WeaponRanged/BowGreat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <pathCost>14</pathCost>
+    <possessionCount>1</possessionCount>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <effectWorking>Smelt</effectWorking>
+      <soundWorking>Recipe_MakeBow</soundWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <researchPrerequisite>CrystalTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>535</displayPriority>
+    </recipeMaker>
+    <relicChance>1</relicChance>
+    <rotatable>false</rotatable>
+    <rotateInShelves>false</rotateInShelves>
+    <selectable>true</selectable>
+    <soundInteract>Bow_Large</soundInteract>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>5</Beauty>
+      <SellPriceFactor>0.2</SellPriceFactor>
+      <WorkToMake>9000</WorkToMake>
+      <Mass>1.5</Mass>
+      <AccuracyTouch>0.7</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.5</AccuracyLong>
+      <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <thingCategories Inherit="False">
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <thingClass>ThingWithComps</thingClass>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <tickerType>Never</tickerType>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <tradeTags>
+      <li>WeaponRanged</li>
+    </tradeTags>
+    <useHitPoints>true</useHitPoints>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Arrow_Crystal</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>29.9</range>
+        <soundCast>Bow_Large</soundCast>
+      </li>
+    </verbs>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+  </ThingDef>
+
+  <!-- 透晶神针 -->
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>CrystalDivineNeedle</defName>
+    <label>crystal divine needle</label>
+    <description>A divine trans-crystal needle that reads the body's intent. A single strike induces deep anesthesia regardless of target — allies receive crystalline regenerative energy while foes suffer haemorrhaging wounds.</description>
+    <graphicData>
+      <texPath>Things/Item/Weapons/CrystalAcupointNeedle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <generateCommonality>0</generateCommonality>
+    <generateAllowChance>0</generateAllowChance>
+    <uiIconScale>0.9</uiIconScale>
+    <techLevel>Spacer</techLevel>
+    <costList>
+      <CrystalMaterial>3</CrystalMaterial>
+      <MedicineUltratech>1</MedicineUltratech>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>0.05</Mass>
+      <MarketValue>3500</MarketValue>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>5</Beauty>
+      <Flammability>0</Flammability>
+    </statBases>
+    <equippedAngleOffset>-45</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+    <verbs>
+      <li>
+        <label>divine strike</label>
+        <verbClass>CrystalTech.Verb_CrystalDivineNeedle</verbClass>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+        <range>1</range>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(200,200,195,0)</glowColor>
+      </li>
+    </comps>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+        <Medicine>4</Medicine>
+      </skillRequirements>
+      <displayPriority>440</displayPriority>
+    </recipeMaker>
+    <researchPrerequisites>
+      <li>CrystalTech</li>
+    </researchPrerequisites>
+    <thingCategories Inherit="False">
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <tradeTags>
+      <li>WeaponMelee</li>
+    </tradeTags>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+  </ThingDef>
+
+  <!-- 透晶盾 -->
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_CrystalShield</defName>
+    <stuffCategories Inherit="False" />
+    <label>crystal shield</label>
+    <description>A lightweight shield woven from trans-crystal lattice. It deflects incoming projectiles with crystalline precision, and can be fired through from the inside. Fragile to EMP.</description>
+    <techLevel>Spacer</techLevel>
+    <thingCategories Inherit="False">
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+      <texPath>Things/Pawn/Humanlike/Apparel/ShieldBelt/ShieldBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Mass>1</Mass>
+      <MarketValue>1500</MarketValue>
+      <WorkToMake>16000</WorkToMake>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>2</Beauty>
+      <EnergyShieldRechargeRate>0.15</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>1.2</EnergyShieldEnergyMax>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <costList>
+      <CrystalMaterial>6</CrystalMaterial>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>BeltDefense</li>
+      </tags>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_Forbiddable"></li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+      <li Class="CompProperties_Styleable"></li>
+      <li Class="CompProperties_Shield">
+        <blocksRangedWeapons>false</blocksRangedWeapons>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(200,200,195,0)</glowColor>
+      </li>
+    </comps>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>300</displayPriority>
+    </recipeMaker>
+    <researchPrerequisites>
+      <li>CrystalTech</li>
+    </researchPrerequisites>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <tradeTags Inherit="False">
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+</Defs>

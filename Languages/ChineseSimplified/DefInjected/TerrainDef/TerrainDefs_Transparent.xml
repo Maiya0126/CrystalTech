@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <TransparentCoatingFloor.label>透晶涂层地板</TransparentCoatingFloor.label>
+  <TransparentCoatingFloor.description>用透晶材料涂层的地板，具有自洁功能。其透光表面易于清洁，提供出色的卫生条件。适合医院和实验室使用。</TransparentCoatingFloor.description>
+
+  <TransparentBridge.label>透晶桥</TransparentBridge.label>
+  <TransparentBridge.description>用透晶材料制成的桥梁，可在水面上建造。坚固、防火，光线可穿透桥面。可承载重型建筑。</TransparentBridge.description>
+
+</LanguageData>

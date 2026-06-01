@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Transparency.stages.0.label>partially transparent surroundings</Transparency.stages.0.label>
+  <Transparency.stages.0.description>The transparent walls let some light in. It feels somewhat open.</Transparency.stages.0.description>
+
+  <Transparency.stages.1.label>transparent surroundings</Transparency.stages.1.label>
+  <Transparency.stages.1.description>The transparent walls make this room feel spacious and open.</Transparency.stages.1.description>
+
+  <Transparency.stages.2.label>lovely transparent space</Transparency.stages.2.label>
+  <Transparency.stages.2.description>This room is so open and bright. The transparency is lovely!</Transparency.stages.2.description>
+
+  <CrystalMilestone25.stages.0.label>crystal colony</CrystalMilestone25.stages.0.label>
+  <CrystalMilestone25.stages.0.description>Our colony is becoming a true crystal palace! The transparent buildings fill me with pride.</CrystalMilestone25.stages.0.description>
+
+  <CrystalMilestone50.stages.0.label>crystal architect</CrystalMilestone50.stages.0.label>
+  <CrystalMilestone50.stages.0.description>We've built so many crystal structures, our colony shines like a diamond! I feel inspired living here.</CrystalMilestone50.stages.0.description>
+
+  <CrystalMilestone100.stages.0.label>crystal utopia</CrystalMilestone100.stages.0.label>
+  <CrystalMilestone100.stages.0.description>A hundred crystal buildings! Our colony is a legendary marvel of transparent architecture. I'm living in a dream!</CrystalMilestone100.stages.0.description>
+
+</LanguageData>

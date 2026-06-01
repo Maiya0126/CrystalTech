@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- 强化透晶墙 -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>ReinforcedTransparentWall</defName>
+    <label>reinforced transparent wall</label>
+    <description>An ultra-durable transparent wall reinforced with advanced crystal binding techniques. Nearly indestructible while maintaining full light transmission. Emits a warm golden glow. Fireproof, airtight, and aesthetically pleasing. Detects cloaked creatures.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <drawStyleCategory>Walls</drawStyleCategory>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <canOverlapZones>false</canOverlapZones>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <drawDamagedOverlay>false</drawDamagedOverlay>
+    <neverMultiSelect>true</neverMultiSelect>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Things/Building/Linked/Wall</texPath>
+      <graphicClass>Graphic_Appearances</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <statBases>
+      <MaxHitPoints>9999</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>12</Beauty>
+      <Cleanliness>0.5</Cleanliness>
+    </statBases>
+    <costList>
+      <CrystalMaterial>8</CrystalMaterial>
+      <Steel>10</Steel>
+      <Silver>5</Silver>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <holdsRoof>true</holdsRoof>
+    <blockLight>false</blockLight>
+    <blockWind>true</blockWind>
+    <designationCategory>Structure</designationCategory>
+    <uiOrder>2019</uiOrder>
+    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+    <replaceTags>
+      <li>Wall</li>
+    </replaceTags>
+    <building>
+      <isAirtight>true</isAirtight>
+      <isWall>true</isWall>
+      <canExchangeVacuum>true</canExchangeVacuum>
+      <relatedBuildCommands>
+        <li>ReinforcedTransparentDoor</li>
+        <li>TransparentVent</li>
+        <li>CrystalFloorWindow</li>
+      </relatedBuildCommands>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <comps>
+      <li Class="CrystalTech.CompProperties_PowerPlantTransparentWall">
+        <basePowerConsumption>-50</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(255,204,102,0)</glowColor>
+      </li>
+      <li Class="CrystalTech.CompProperties_CrystalDetector">
+        <detectionRadius>20</detectionRadius>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>CrystalReinforced</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 强化透晶门 -->
+  <ThingDef ParentName="DoorBase">
+    <defName>ReinforcedTransparentDoor</defName>
+    <label>reinforced transparent door</label>
+    <description>An ultra-durable transparent door reinforced with advanced crystal binding techniques. Nearly indestructible while maintaining full light transmission. Emits a warm golden glow. Detects cloaked creatures.</description>
+    <stuffCategories Inherit="False" />
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <graphicData>
+      <texPath>Things/Building/Door/DoorSimple_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/DoorSimple_MenuIcon</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <statBases>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <WorkToBuild>3000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>12</Beauty>
+      <Cleanliness>0.5</Cleanliness>
+    </statBases>
+    <costList>
+      <CrystalMaterial>12</CrystalMaterial>
+      <Steel>5</Steel>
+      <Silver>3</Silver>
+    </costList>
+    <blockLight>false</blockLight>
+    <designationCategory>Structure</designationCategory>
+    <uiOrder>2020</uiOrder>
+    <replaceTags>
+      <li>Door</li>
+    </replaceTags>
+    <building>
+      <isAirtight>true</isAirtight>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <canExchangeVacuum>true</canExchangeVacuum>
+      <blueprintClass>Blueprint_Door</blueprintClass>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Door/Door_Blueprint</texPath>
+      </blueprintGraphicData>
+      <relatedBuildCommands>
+        <li>ReinforcedTransparentWall</li>
+      </relatedBuildCommands>
+    </building>
+    <comps>
+      <li Class="CrystalTech.CompProperties_PowerPlantTransparentWall">
+        <basePowerConsumption>-30</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(255,204,102,0)</glowColor>
+      </li>
+      <li Class="CrystalTech.CompProperties_CrystalDetector">
+        <detectionRadius>20</detectionRadius>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>CrystalReinforced</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 强化透晶栅栏 -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>ReinforcedTransparentFence</defName>
+    <label>reinforced transparent fence</label>
+    <description>An ultra-durable transparent fence reinforced with advanced crystal binding techniques. Light passes through freely. Detects cloaked creatures. Emits a warm golden glow.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <drawStyleCategory>Defenses</drawStyleCategory>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>80</pathCost>
+    <blockWind>false</blockWind>
+    <fillPercent>0</fillPercent>
+    <drawDamagedOverlay>false</drawDamagedOverlay>
+    <neverMultiSelect>true</neverMultiSelect>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Things/Building/Linked/Fence</texPath>
+      <graphicClass>Graphic_Appearances</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <linkType>Asymmetric</linkType>
+      <linkFlags>
+        <li>Fences</li>
+      </linkFlags>
+      <asymmetricLink>
+        <linkFlags>
+          <li>Wall</li>
+          <li>Rock</li>
+        </linkFlags>
+        <linkToDoors>true</linkToDoors>
+        <drawDoorBorderEast>
+          <color>(0,0,0)</color>
+          <size>(0.04, 0.77)</size>
+          <offset>(0.5, 0, -0.08)</offset>
+        </drawDoorBorderEast>
+        <drawDoorBorderWest>
+          <color>(0,0,0)</color>
+          <size>(0.04, 0.77)</size>
+          <offset>(-0.5, 0, -0.08)</offset>
+        </drawDoorBorderWest>
+      </asymmetricLink>
+      <shadowData>
+        <volume>(0.3, 0.5, 0.3)</volume>
+        <offset>(0,0,-0.23)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.35,0.1,0.3,0.7)</rect>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <statBases>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <WorkToBuild>500</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>8</Beauty>
+    </statBases>
+    <costList>
+      <CrystalMaterial>4</CrystalMaterial>
+      <Steel>2</Steel>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Structure</designationCategory>
+    <uiOrder>2021</uiOrder>
+    <uiIconPath>Things/Building/Linked/Fence_MenuIcon</uiIconPath>
+    <replaceTags>
+      <li>Wall</li>
+    </replaceTags>
+    <building>
+      <isInert>true</isInert>
+      <isFence>true</isFence>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <paintable>false</paintable>
+      <relatedBuildCommands>
+        <li>ReinforcedTransparentFenceGate</li>
+      </relatedBuildCommands>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/Fence_Blueprint</texPath>
+        <graphicClass>Graphic_Appearances</graphicClass>
+      </blueprintGraphicData>
+    </building>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(255,204,102,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>CrystalReinforced</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 强化透晶栅栏门 -->
+  <ThingDef ParentName="DoorBase">
+    <defName>ReinforcedTransparentFenceGate</defName>
+    <label>reinforced transparent fence gate</label>
+    <description>An ultra-durable transparent fence gate reinforced with advanced crystal binding techniques. Light passes through freely. Emits a warm golden glow.</description>
+    <stuffCategories Inherit="False" />
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <graphicData>
+      <texPath>Things/Building/Door/FenceGate_Mover</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <shadowData>
+        <volume>(0.3, 0.5, 0.3)</volume>
+      </shadowData>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/FenceGate_MenuIcon</uiIconPath>
+    <altitudeLayer>DoorMoveable</altitudeLayer>
+    <blockLight>false</blockLight>
+    <blockWeather>true</blockWeather>
+    <blockWind>false</blockWind>
+    <holdsRoof>false</holdsRoof>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <statBases>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>1500</WorkToBuild>
+      <Beauty>8</Beauty>
+      <DoorOpenSpeed>1.2</DoorOpenSpeed>
+    </statBases>
+    <costList>
+      <CrystalMaterial>8</CrystalMaterial>
+      <Steel>3</Steel>
+      <Silver>2</Silver>
+    </costList>
+    <designationCategory>Structure</designationCategory>
+    <uiOrder>2022</uiOrder>
+    <replaceTags>
+      <li>Door</li>
+    </replaceTags>
+    <building>
+      <isInert>true</isInert>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <preferConnectingToFences>true</preferConnectingToFences>
+      <paintable>false</paintable>
+      <blueprintClass>Blueprint_Door</blueprintClass>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Door/FenceGate_Blueprint</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+      </blueprintGraphicData>
+      <relatedBuildCommands>
+        <li>ReinforcedTransparentFence</li>
+      </relatedBuildCommands>
+    </building>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(255,204,102,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>CrystalReinforced</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

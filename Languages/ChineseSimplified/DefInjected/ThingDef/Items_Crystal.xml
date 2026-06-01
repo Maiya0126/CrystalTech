@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CrystalMaterial.label>透晶材料</CrystalMaterial.label>
+  <CrystalMaterial.description>一种具有独特光学和导电特性的透光结晶材料。用于建造先进的透晶建筑和装备。其自洁表面和透光特性使其成为高科技建筑的理想选择。</CrystalMaterial.description>
+
+  <Crystalline.label>透晶</Crystalline.label>
+
+</LanguageData>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <TransparentCoatingFloor.label>transparent coating floor</TransparentCoatingFloor.label>
+  <TransparentCoatingFloor.description>A crystal-coated floor with self-cleaning properties. Its translucent surface is easy to clean and provides excellent hygiene. Ideal for hospitals and laboratories.</TransparentCoatingFloor.description>
+
+  <TransparentBridge.label>transparent bridge</TransparentBridge.label>
+  <TransparentBridge.description>A transparent bridge made of crystal material. Can be built over water. Crystal structures are extremely durable, fireproof, and let light pass through to the water below. Supports heavy structures.</TransparentBridge.description>
+
+</LanguageData>

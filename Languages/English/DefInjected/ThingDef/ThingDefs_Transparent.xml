@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <TransparentWall.label>transparent wall</TransparentWall.label>
+  <TransparentWall.description>A transparent wall made of crystal material. Allows light to pass through while maintaining structural integrity. Features a subtle natural glow. Fireproof and provides thermal insulation.</TransparentWall.description>
+
+  <TransparentDoor.label>transparent door</TransparentDoor.label>
+  <TransparentDoor.description>A transparent door made of crystal material. Allows light to pass through with a subtle glow. Fireproof and thermally insulated.</TransparentDoor.description>
+
+  <TransparentFence.label>transparent fence</TransparentFence.label>
+  <TransparentFence.description>A transparent fence made of crystal material. Light passes through freely with a soft glow.</TransparentFence.description>
+
+  <TransparentFenceGate.label>transparent fence gate</TransparentFenceGate.label>
+  <TransparentFenceGate.description>A transparent gate made of crystal material. Light passes through freely with a soft glow.</TransparentFenceGate.description>
+
+  <TransparentVent.label>transparent vent</TransparentVent.label>
+  <TransparentVent.description>A transparent vent made of crystal material for equalizing temperature between rooms. Allows light to pass through with a soft glow.</TransparentVent.description>
+
+  <AdvancedTransparentWall.label>advanced transparent wall</AdvancedTransparentWall.label>
+  <AdvancedTransparentWall.description>An advanced transparent wall made of crystal material, with integrated power transmission, vacuum isolation, self-cleaning surface, and solar power generation. Emits a soft blue glow. Fireproof and highly durable.</AdvancedTransparentWall.description>
+
+  <AdvancedTransparentDoor.label>advanced transparent door</AdvancedTransparentDoor.label>
+  <AdvancedTransparentDoor.description>An advanced transparent door made of crystal material, with integrated power transmission, vacuum isolation, self-cleaning surface, and solar power generation. Emits a soft blue glow.</AdvancedTransparentDoor.description>
+
+  <AdvancedTransparentAutodoor.label>advanced transparent autodoor</AdvancedTransparentAutodoor.label>
+  <AdvancedTransparentAutodoor.description>An advanced transparent autodoor made of crystal material, with integrated power transmission, vacuum isolation, self-cleaning surface, solar power generation, and automatic operation. Emits a soft blue glow.</AdvancedTransparentAutodoor.description>
+
+  <AdvancedTransparentFence.label>advanced transparent fence</AdvancedTransparentFence.label>
+  <AdvancedTransparentFence.description>An advanced transparent fence made of crystal material, with integrated power transmission. Emits a soft blue glow.</AdvancedTransparentFence.description>
+
+  <AdvancedTransparentFenceGate.label>advanced transparent fence gate</AdvancedTransparentFenceGate.label>
+  <AdvancedTransparentFenceGate.description>An advanced transparent fence gate made of crystal material, with integrated power transmission. Emits a soft blue glow.</AdvancedTransparentFenceGate.description>
+
+  <ReinforcedTransparentWall.label>reinforced transparent wall</ReinforcedTransparentWall.label>
+  <ReinforcedTransparentWall.description>An ultra-durable transparent wall reinforced with advanced crystal binding techniques. Nearly indestructible while maintaining full light transmission. Emits a warm golden glow. Fireproof, airtight, and aesthetically pleasing.</ReinforcedTransparentWall.description>
+
+  <ReinforcedTransparentDoor.label>reinforced transparent door</ReinforcedTransparentDoor.label>
+  <ReinforcedTransparentDoor.description>An ultra-durable transparent door reinforced with advanced crystal binding techniques. Nearly indestructible while maintaining full light transmission. Emits a warm golden glow.</ReinforcedTransparentDoor.description>
+
+  <ReinforcedTransparentFence.label>reinforced transparent fence</ReinforcedTransparentFence.label>
+  <ReinforcedTransparentFence.description>An ultra-durable transparent fence reinforced with advanced crystal binding techniques. Light passes through freely. Emits a warm golden glow.</ReinforcedTransparentFence.description>
+
+  <ReinforcedTransparentFenceGate.label>reinforced transparent fence gate</ReinforcedTransparentFenceGate.label>
+  <ReinforcedTransparentFenceGate.description>An ultra-durable transparent fence gate reinforced with advanced crystal binding techniques. Light passes through freely. Emits a warm golden glow.</ReinforcedTransparentFenceGate.description>
+
+  <CrystalFloorWindow.label>crystal floor window</CrystalFloorWindow.label>
+  <CrystalFloorWindow.description>A floor-to-ceiling transparent window made of crystal material. Can be placed over existing walls to create a see-through window that lets light pass through from both sides. Emits a soft blue glow. Fireproof and airtight.</CrystalFloorWindow.description>
+
+  <TransparentCeilingLamp.label>transparent ceiling lamp</TransparentCeilingLamp.label>
+  <TransparentCeilingLamp.description>A sleek transparent lamp made of reinforced crystal material. Mounts on the ceiling providing clean, bright illumination without occupying floor space. Self-powered by integrated solar crystal. Detects cloaked creatures. Fireproof.</TransparentCeilingLamp.description>
+
+  <TransparentTableRect.label>transparent table (1x2)</TransparentTableRect.label>
+  <TransparentTableRect.description>A table sculpted from living crystal, its surface a mirror of still water. Immune to fire, radiant with inner light.</TransparentTableRect.description>
+
+  <TransparentTableSquare.label>transparent table (2x2)</TransparentTableSquare.label>
+  <TransparentTableSquare.description>A grand table sculpted from living crystal, its surface a mirror of still water. Immune to fire, radiant with inner light.</TransparentTableSquare.description>
+
+  <TransparentDiningChair.label>transparent dining chair</TransparentDiningChair.label>
+  <TransparentDiningChair.description>A dining chair carved from a single crystal bloom, cool to the touch yet inviting. Comfortable and elegant, it seems to float in ambient light. Immune to fire.</TransparentDiningChair.description>
+
+  <TransparentArmchair.label>transparent armchair</TransparentArmchair.label>
+  <TransparentArmchair.description>A deep-cushioned armchair refracted through crystal lattice, blending opulence with ethereal grace. Sink in and let the glow dissolve the day's weight. Immune to fire.</TransparentArmchair.description>
+
+  <TransparentBed.label>transparent bed</TransparentBed.label>
+  <TransparentBed.description>A bed woven from crystal threads, cradling its sleeper in a cocoon of soft luminescence. The crystal lattice gently accelerates healing and boosts immunity. Rest here feels deeper, as if dreams flow through the lattice itself. Immune to fire, but fragile against impacts.</TransparentBed.description>
+
+  <TransparentDoubleBed.label>transparent double bed</TransparentDoubleBed.label>
+  <TransparentDoubleBed.description>A double bed woven from crystal threads, cradling two sleepers in a shared cocoon of soft luminescence. The crystal lattice gently accelerates healing and boosts immunity. Rest here feels deeper, as if dreams flow through the lattice itself. Immune to fire, but fragile against impacts.</TransparentDoubleBed.description>
+
+  <TransparentBarricade.label>transparent barricade</TransparentBarricade.label>
+  <TransparentBarricade.description>A transparent barricade made of crystal material. Provides excellent cover while allowing light to pass through. Fireproof and much more attractive than sandbags.</TransparentBarricade.description>
+
+  <TransparentShelf.label>transparent shelf</TransparentShelf.label>
+  <TransparentShelf.description>A crystalline shelf where stored items seem suspended in frozen light, never aging, never tarnishing. Clean, organized, and quietly luminous. Immune to fire.</TransparentShelf.description>
+
+  <TransparentSmallShelf.label>transparent small shelf</TransparentSmallShelf.label>
+  <TransparentSmallShelf.description>A small crystalline shelf where stored items seem suspended in frozen light, never aging, never tarnishing. Clean, organized, and quietly luminous. Immune to fire.</TransparentSmallShelf.description>
+
+  <TransparentOutfitStand.label>transparent outfit stand</TransparentOutfitStand.label>
+  <TransparentOutfitStand.description>A crystalline figure that presents a single outfit with crystalline grace, turning wardrobe into exhibit. Immune to fire, radiant and elegant beyond compare.</TransparentOutfitStand.description>
+
+  <CrystalLongSword.label>crystal longsword</CrystalLongSword.label>
+  <CrystalLongSword.description>A longsword forged from trans-crystal, impossibly light and razor-thin. Its blade moves with startling speed, carving through flesh before the eye can follow.</CrystalLongSword.description>
+
+  <CrystalSpear.label>crystal spear</CrystalSpear.label>
+  <CrystalSpear.description>A spear tipped with a trans-crystal point that punches through armor like paper. Especially effective against mechanoids, whose plating offers little resistance to its piercing edge.</CrystalSpear.description>
+
+  <CrystalGreatBow.label>crystal greatbow</CrystalGreatBow.label>
+  <CrystalGreatBow.description>A greatbow strung with trans-crystal filament, firing crystal-shard arrows at devastating speed. Draws and looses twice as fast as a conventional greatbow.</CrystalGreatBow.description>
+
+  <CrystalDivineNeedle.label>crystal divine needle</CrystalDivineNeedle.label>
+  <CrystalDivineNeedle.description>A divine trans-crystal needle that reads the body's intent. A single strike induces deep anesthesia regardless of target — allies receive crystalline regenerative energy while foes suffer haemorrhaging wounds.</CrystalDivineNeedle.description>
+
+  <Apparel_CrystalShield.label>crystal shield</Apparel_CrystalShield.label>
+  <Apparel_CrystalShield.description>A lightweight shield woven from trans-crystal lattice. It deflects incoming projectiles with crystalline precision, and can be fired through from the inside. Fragile to EMP.</Apparel_CrystalShield.description>
+
+  <TransparentSculptureSmall.label>transparent small sculpture</TransparentSculptureSmall.label>
+  <TransparentSculptureSmall.description>A small sculpture carved from living crystal, its translucent form catching and scattering light like frozen starlight. Immune to fire, forever pristine.</TransparentSculptureSmall.description>
+
+  <TransparentSculptureLarge.label>transparent large sculpture</TransparentSculptureLarge.label>
+  <TransparentSculptureLarge.description>A large sculpture shaped from living crystal, its crystalline form refracting light into prismatic cascades. Immune to fire, forever radiant.</TransparentSculptureLarge.description>
+
+  <TransparentSculptureGrand.label>transparent grand sculpture</TransparentSculptureGrand.label>
+  <TransparentSculptureGrand.description>A monumental sculpture born from living crystal, its towering translucent form bathes the room in prismatic radiance. Immune to fire, an eternal monument of crystalline art.</TransparentSculptureGrand.description>
+
+</LanguageData>

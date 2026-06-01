@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>CrystalMaterial</defName>
+    <label>crystal material</label>
+    <description>A transparent crystalline material with unique optical and conductive properties. Used to construct advanced transparent buildings and equipment. Its self-cleaning surface and light-transmitting capabilities make it ideal for high-tech construction.</description>
+    <graphicData>
+      <texPath>Things/Item/CrystalMaterial</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>30</MarketValue>
+      <Mass>0.3</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>4</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>300</stackLimit>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>1</glowRadius>
+        <glowColor>(200,220,255,0)</glowColor>
+      </li>
+    </comps>
+    <stuffProps>
+      <categories>
+        <li>Crystalline</li>
+      </categories>
+      <color>(200,220,255)</color>
+      <constructEffect>ConstructMetal</constructEffect>
+    </stuffProps>
+  </ThingDef>
+
+  <StuffCategoryDef>
+    <defName>Crystalline</defName>
+    <label>crystalline</label>
+  </StuffCategoryDef>
+
+</Defs>

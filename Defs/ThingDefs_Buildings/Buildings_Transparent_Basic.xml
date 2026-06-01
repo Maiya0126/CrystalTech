@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- 透晶墙 -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>TransparentWall</defName>
+    <label>transparent wall</label>
+    <description>A transparent wall made of crystal material. Allows light to pass through while maintaining structural integrity. Features a subtle natural glow. Fireproof and provides thermal insulation.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <drawStyleCategory>Walls</drawStyleCategory>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <canOverlapZones>false</canOverlapZones>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <drawDamagedOverlay>false</drawDamagedOverlay>
+    <neverMultiSelect>true</neverMultiSelect>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Things/Building/Linked/Wall</texPath>
+      <graphicClass>Graphic_Appearances</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>135</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>3</Beauty>
+    </statBases>
+    <costList>
+      <CrystalMaterial>2</CrystalMaterial>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <holdsRoof>true</holdsRoof>
+    <blockLight>false</blockLight>
+    <blockWind>true</blockWind>
+    <designationCategory>Structure</designationCategory>
+    <uiOrder>2010</uiOrder>
+    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+    <replaceTags>
+      <li>Wall</li>
+    </replaceTags>
+    <building>
+      <isAirtight>true</isAirtight>
+      <isWall>true</isWall>
+      <canExchangeVacuum>true</canExchangeVacuum>
+      <relatedBuildCommands>
+        <li>TransparentDoor</li>
+        <li>TransparentVent</li>
+        <li>CrystalFloorWindow</li>
+      </relatedBuildCommands>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>4</glowRadius>
+        <glowColor>(200,200,195,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>CrystalTech</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 透晶门 -->
+  <ThingDef ParentName="DoorBase">
+    <defName>TransparentDoor</defName>
+    <label>transparent door</label>
+    <description>A transparent door made of crystal material. Allows light to pass through with a subtle glow. Fireproof and thermally insulated.</description>
+    <stuffCategories Inherit="False" />
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <graphicData>
+      <texPath>Things/Building/Door/DoorSimple_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/DoorSimple_MenuIcon</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>500</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>3</Beauty>
+    </statBases>
+    <costList>
+      <CrystalMaterial>4</CrystalMaterial>
+    </costList>
+    <blockLight>false</blockLight>
+    <designationCategory>Structure</designationCategory>
+    <uiOrder>2011</uiOrder>
+    <replaceTags>
+      <li>Door</li>
+    </replaceTags>
+    <building>
+      <isAirtight>true</isAirtight>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <canExchangeVacuum>true</canExchangeVacuum>
+      <blueprintClass>Blueprint_Door</blueprintClass>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Door/Door_Blueprint</texPath>
+      </blueprintGraphicData>
+      <relatedBuildCommands>
+        <li>TransparentWall</li>
+      </relatedBuildCommands>
+    </building>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>4</glowRadius>
+        <glowColor>(200,200,195,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>CrystalTech</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 透晶栅栏 -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>TransparentFence</defName>
+    <label>transparent fence</label>
+    <description>A transparent fence made of crystal material. Light passes through freely with a soft glow.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <drawStyleCategory>Defenses</drawStyleCategory>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>80</pathCost>
+    <blockWind>false</blockWind>
+    <fillPercent>0</fillPercent>
+    <drawDamagedOverlay>false</drawDamagedOverlay>
+    <neverMultiSelect>true</neverMultiSelect>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Things/Building/Linked/Fence</texPath>
+      <graphicClass>Graphic_Appearances</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <linkType>Asymmetric</linkType>
+      <linkFlags>
+        <li>Fences</li>
+      </linkFlags>
+      <asymmetricLink>
+        <linkFlags>
+          <li>Wall</li>
+          <li>Rock</li>
+        </linkFlags>
+        <linkToDoors>true</linkToDoors>
+        <drawDoorBorderEast>
+          <color>(0,0,0)</color>
+          <size>(0.04, 0.77)</size>
+          <offset>(0.5, 0, -0.08)</offset>
+        </drawDoorBorderEast>
+        <drawDoorBorderWest>
+          <color>(0,0,0)</color>
+          <size>(0.04, 0.77)</size>
+          <offset>(-0.5, 0, -0.08)</offset>
+        </drawDoorBorderWest>
+      </asymmetricLink>
+      <shadowData>
+        <volume>(0.3, 0.5, 0.3)</volume>
+        <offset>(0,0,-0.23)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.35,0.1,0.3,0.7)</rect>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>5</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <costList>
+      <CrystalMaterial>2</CrystalMaterial>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Structure</designationCategory>
+    <uiOrder>2012</uiOrder>
+    <uiIconPath>Things/Building/Linked/Fence_MenuIcon</uiIconPath>
+    <replaceTags>
+      <li>Wall</li>
+    </replaceTags>
+    <building>
+      <isInert>true</isInert>
+      <isFence>true</isFence>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <paintable>false</paintable>
+      <relatedBuildCommands>
+        <li>TransparentFenceGate</li>
+      </relatedBuildCommands>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/Fence_Blueprint</texPath>
+        <graphicClass>Graphic_Appearances</graphicClass>
+      </blueprintGraphicData>
+    </building>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>4</glowRadius>
+        <glowColor>(200,200,195,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>CrystalTech</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 透晶栅栏门 -->
+  <ThingDef ParentName="DoorBase">
+    <defName>TransparentFenceGate</defName>
+    <label>transparent fence gate</label>
+    <description>A transparent gate made of crystal material. Light passes through freely with a soft glow.</description>
+    <stuffCategories Inherit="False" />
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <graphicData>
+      <texPath>Things/Building/Door/FenceGate_Mover</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <shadowData>
+        <volume>(0.3, 0.5, 0.3)</volume>
+      </shadowData>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/FenceGate_MenuIcon</uiIconPath>
+    <altitudeLayer>DoorMoveable</altitudeLayer>
+    <blockLight>false</blockLight>
+    <blockWeather>true</blockWeather>
+    <blockWind>false</blockWind>
+    <holdsRoof>false</holdsRoof>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <statBases>
+      <MaxHitPoints>20</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>500</WorkToBuild>
+      <Beauty>2</Beauty>
+      <DoorOpenSpeed>1.15</DoorOpenSpeed>
+    </statBases>
+    <costList>
+      <CrystalMaterial>4</CrystalMaterial>
+    </costList>
+    <designationCategory>Structure</designationCategory>
+    <uiOrder>2013</uiOrder>
+    <replaceTags>
+      <li>Door</li>
+    </replaceTags>
+    <building>
+      <isInert>true</isInert>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <preferConnectingToFences>true</preferConnectingToFences>
+      <paintable>false</paintable>
+      <blueprintClass>Blueprint_Door</blueprintClass>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Door/FenceGate_Blueprint</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+      </blueprintGraphicData>
+      <relatedBuildCommands>
+        <li>TransparentFence</li>
+      </relatedBuildCommands>
+    </building>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>4</glowRadius>
+        <glowColor>(200,200,195,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>CrystalTech</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 透晶通风口 -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>TransparentVent</defName>
+    <label>transparent vent</label>
+    <description>A transparent vent made of crystal material for equalizing temperature between rooms. Allows light to pass through with a soft glow.</description>
+    <thingClass>Building_Vent</thingClass>
+    <category>Building</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <fillPercent>1</fillPercent>
+    <blockLight>false</blockLight>
+    <blockWind>true</blockWind>
+    <drawDamagedOverlay>false</drawDamagedOverlay>
+    <graphicData>
+      <texPath>Things/Building/Misc/TempControl/Vent</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>400</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <costList>
+      <CrystalMaterial>4</CrystalMaterial>
+    </costList>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Temperature</designationCategory>
+    <uiOrder>2051</uiOrder>
+    <tickerType>Rare</tickerType>
+    <building>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <canExchangeVacuum>true</canExchangeVacuum>
+      <isAirtight>true</isAirtight>
+    </building>
+    <comps>
+      <li Class="CompProperties_Flickable">
+        <commandTexture>UI/Commands/Vent</commandTexture>
+        <commandLabelKey>CommandDesignateOpenCloseVentLabel</commandLabelKey>
+        <commandDescKey>CommandDesignateOpenCloseVentDesc</commandDescKey>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>4</glowRadius>
+        <glowColor>(200,200,195,0)</glowColor>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_Vent</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <researchPrerequisites>
+      <li>CrystalTech</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

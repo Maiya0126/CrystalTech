@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Transparency.stages.0.label>部分通透的环境</Transparency.stages.0.label>
+  <Transparency.stages.0.description>透晶墙让一些光线进入，感觉有些开阔。</Transparency.stages.0.description>
+
+  <Transparency.stages.1.label>通透的环境</Transparency.stages.1.label>
+  <Transparency.stages.1.description>透晶墙让这个房间显得宽敞明亮。</Transparency.stages.1.description>
+
+  <Transparency.stages.2.label>美妙的通透空间</Transparency.stages.2.label>
+  <Transparency.stages.2.description>这个房间如此开阔明亮，通透的感觉真棒！</Transparency.stages.2.description>
+
+  <CrystalMilestone25.stages.0.label>水晶殖民地</CrystalMilestone25.stages.0.label>
+  <CrystalMilestone25.stages.0.description>我们的殖民地正在变成一座真正的水晶宫殿！透晶建筑让我充满自豪。</CrystalMilestone25.stages.0.description>
+
+  <CrystalMilestone50.stages.0.label>透晶建筑师</CrystalMilestone50.stages.0.label>
+  <CrystalMilestone50.stages.0.description>我们建造了这么多透晶建筑，殖民地如钻石般闪耀！住在这里让我感到灵感涌动。</CrystalMilestone50.stages.0.description>
+
+  <CrystalMilestone100.stages.0.label>透晶乌托邦</CrystalMilestone100.stages.0.label>
+  <CrystalMilestone100.stages.0.description>一百座透晶建筑！我们的殖民地是透明建筑的传奇奇迹，我生活在梦中！</CrystalMilestone100.stages.0.description>
+
+</LanguageData>
