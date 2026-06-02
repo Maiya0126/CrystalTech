@@ -37,11 +37,6 @@
     <burnableByRecipe>true</burnableByRecipe>
     <category>Item</category>
     <comps>
-      <li Class="CompProperties_Forbiddable"></li>
-      <li>
-        <compClass>CompEquippable</compClass>
-      </li>
-      <li Class="CompProperties_Styleable"></li>
       <li Class="CompProperties_Glower">
         <glowRadius>2</glowRadius>
         <glowColor>(200,200,195,0)</glowColor>
@@ -62,9 +57,6 @@
       <shaderType>Transparent</shaderType>
       <drawSize>0.8</drawSize>
     </graphicData>
-    <inspectorTabs>
-      <li>ITab_Art</li>
-    </inspectorTabs>
     <pathCost>14</pathCost>
     <possessionCount>1</possessionCount>
     <recipeMaker>
@@ -169,11 +161,6 @@
     <burnableByRecipe>true</burnableByRecipe>
     <category>Item</category>
     <comps>
-      <li Class="CompProperties_Forbiddable"></li>
-      <li>
-        <compClass>CompEquippable</compClass>
-      </li>
-      <li Class="CompProperties_Styleable"></li>
       <li Class="CompProperties_Glower">
         <glowRadius>2</glowRadius>
         <glowColor>(200,200,195,0)</glowColor>
@@ -194,9 +181,6 @@
       <shaderType>Transparent</shaderType>
       <drawSize>0.8</drawSize>
     </graphicData>
-    <inspectorTabs>
-      <li>ITab_Art</li>
-    </inspectorTabs>
     <pathCost>14</pathCost>
     <possessionCount>1</possessionCount>
     <recipeMaker>
@@ -293,11 +277,6 @@
     <burnableByRecipe>true</burnableByRecipe>
     <category>Item</category>
     <comps>
-      <li Class="CompProperties_Forbiddable"></li>
-      <li>
-        <compClass>CompEquippable</compClass>
-      </li>
-      <li Class="CompProperties_Styleable"></li>
       <li Class="CompProperties_Glower">
         <glowRadius>2</glowRadius>
         <glowColor>(200,200,195,0)</glowColor>
@@ -398,7 +377,7 @@
   </ThingDef>
 
   <!-- 透晶神针 -->
-  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp">
     <defName>CrystalDivineNeedle</defName>
     <label>crystal divine needle</label>
     <description>A divine trans-crystal needle that reads the body's intent. A single strike induces deep anesthesia regardless of target — allies receive crystalline regenerative energy while foes suffer haemorrhaging wounds.</description>
@@ -448,6 +427,9 @@
       </li>
     </verbs>
     <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
       <li Class="CompProperties_Glower">
         <glowRadius>2</glowRadius>
         <glowColor>(200,200,195,0)</glowColor>
@@ -530,11 +512,6 @@
       </tags>
     </apparel>
     <comps>
-      <li Class="CompProperties_Forbiddable"></li>
-      <li>
-        <compClass>CompColorable</compClass>
-      </li>
-      <li Class="CompProperties_Styleable"></li>
       <li Class="CompProperties_Shield">
         <blocksRangedWeapons>false</blocksRangedWeapons>
       </li>

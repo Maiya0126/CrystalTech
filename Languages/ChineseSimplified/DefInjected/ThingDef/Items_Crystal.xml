@@ -2,7 +2,7 @@
 <LanguageData>
 
   <CrystalMaterial.label>透晶材料</CrystalMaterial.label>
-  <CrystalMaterial.description>一种具有独特光学和导电特性的透光结晶材料。用于建造先进的透晶建筑和装备。其自洁表面和透光特性使其成为高科技建筑的理想选择。</CrystalMaterial.description>
+  <CrystalMaterial.description>一种具有独特光学和导电特性的透光结晶材料。可建造透晶建筑,也可锻造武器与防具。作为金属材料,它能赋予武器更高的锐击伤害与攻速、更轻的重量和防火特性,但脆性使其耐久与护甲值较低。其自洁表面和透光特性使其成为高科技建筑的理想选择。</CrystalMaterial.description>
 
   <Crystalline.label>透晶</Crystalline.label>
 

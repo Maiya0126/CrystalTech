@@ -4,7 +4,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>CrystalMaterial</defName>
     <label>crystal material</label>
-    <description>A transparent crystalline material with unique optical and conductive properties. Used to construct advanced transparent buildings and equipment. Its self-cleaning surface and light-transmitting capabilities make it ideal for high-tech construction.</description>
+    <description>A transparent crystalline material with unique optical and conductive properties. Used to craft transparent buildings, weapons and apparel. As a metallic material, it can be used to forge weapons and armor with boosted sharp damage and attack speed, reduced weight and fireproof nature, though its brittleness means lower durability and armor rating. Its self-cleaning surface and light-transmitting capabilities make it ideal for high-tech construction.</description>
     <graphicData>
       <texPath>Things/Item/CrystalMaterial</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -19,6 +19,13 @@
       <Flammability>0</Flammability>
       <DeteriorationRate>0</DeteriorationRate>
       <Beauty>4</Beauty>
+      <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.48</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1.2</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <thingCategories>
       <li>ResourcesRaw</li>
@@ -33,9 +40,25 @@
     <stuffProps>
       <categories>
         <li>Crystalline</li>
+        <li>Metallic</li>
       </categories>
+      <appearance>Smooth</appearance>
       <color>(200,220,255)</color>
       <constructEffect>ConstructMetal</constructEffect>
+      <isAirtight>true</isAirtight>
+      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+      <statOffsets>
+        <Beauty>4</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Flammability>0</Flammability>
+        <MeleeWeapon_CooldownMultiplier>0.83</MeleeWeapon_CooldownMultiplier>
+        <Mass>0.5</Mass>
+      </statFactors>
     </stuffProps>
   </ThingDef>
 

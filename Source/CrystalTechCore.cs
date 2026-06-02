@@ -63,6 +63,13 @@ namespace CrystalTech
             Log.Message("[Crystal Tech] Initialized");
         }
 
+        public static readonly List<string> CrystalFurnitureDefNames = new List<string>
+        {
+            "TransparentTableRect", "TransparentTableSquare",
+            "TransparentDiningChair", "TransparentArmchair",
+            "TransparentBed", "TransparentDoubleBed"
+        };
+
         public static bool IsTransparentWall(ThingDef def)
         {
             if (def == null) return false;
@@ -72,6 +79,11 @@ namespace CrystalTech
         public static bool IsCrystalApparel(ThingDef def)
         {
             return def != null && CrystalApparelDefNames.Contains(def.defName);
+        }
+
+        public static bool IsCrystalFurniture(ThingDef def)
+        {
+            return def != null && CrystalFurnitureDefNames.Contains(def.defName);
         }
 
         public static bool HasCrystalItemEquipped(Pawn pawn)
@@ -223,6 +235,53 @@ namespace CrystalTech
                 Color tint = CrystalTechCore.GetTintColor(__instance.def);
                 __result = new Color(tint.r, tint.g, tint.b, tint.a);
             }
+        }
+    }
+
+    [HarmonyPatch(typeof(Need_Outdoors), "NeedInterval")]
+    public static class Need_Outdoors_CabinFeverPatch
+    {
+        static void Postfix(Need_Outdoors __instance)
+        {
+            Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue<Pawn>();
+            if (pawn == null || !pawn.Spawned) return;
+            Room room = pawn.GetRoom();
+            if (room == null || room.PsychologicallyOutdoors) return;
+            bool inCrystalRoom = false;
+            foreach (var cell in room.Cells)
+            {
+                var edifice = cell.GetEdifice(pawn.Map);
+                if (edifice != null && CrystalTechCore.IsTransparentWall(edifice.def))
+                {
+                    inCrystalRoom = true;
+                    break;
+                }
+            }
+            if (!inCrystalRoom) return;
+            float cur = __instance.CurLevel;
+            if (cur < 0.6f)
+            {
+                __instance.CurLevel = Mathf.Min(cur + 0.0025f * 3f, 0.8f);
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(StuffProperties), "CanMake")]
+    public static class StuffProperties_CanMake_BlockBuildingPatch
+    {
+        static bool Prefix(StuffProperties __instance, BuildableDef t, ref bool __result)
+        {
+            if (__instance.parent?.defName != "CrystalMaterial") return true;
+            if (t == null) return true;
+            if (t is ThingDef thingDef && thingDef.category == ThingCategory.Building)
+            {
+                if (!CrystalTechCore.IsTransparentWall(thingDef) && !CrystalTechCore.IsCrystalFurniture(thingDef))
+                {
+                    __result = false;
+                    return false;
+                }
+            }
+            return true;
         }
     }
 
