@@ -63,7 +63,9 @@
         <Crafting>8</Crafting>
       </skillRequirements>
     </recipeMaker>
-    <tradeTags Inherit="False" />
+    <tradeTags Inherit="False">
+      <li>ExoticMisc</li>
+    </tradeTags>
     <researchPrerequisites>
       <li>CrystalTech</li>
     </researchPrerequisites>
@@ -133,7 +135,9 @@
         <Crafting>6</Crafting>
       </skillRequirements>
     </recipeMaker>
-    <tradeTags Inherit="False" />
+    <tradeTags Inherit="False">
+      <li>ExoticMisc</li>
+    </tradeTags>
     <researchPrerequisites>
       <li>CrystalTech</li>
     </researchPrerequisites>
@@ -200,7 +204,9 @@
         <Crafting>5</Crafting>
       </skillRequirements>
     </recipeMaker>
-    <tradeTags Inherit="False" />
+    <tradeTags Inherit="False">
+      <li>ExoticMisc</li>
+    </tradeTags>
     <researchPrerequisites>
       <li>CrystalTech</li>
     </researchPrerequisites>
@@ -268,7 +274,9 @@
         <Crafting>7</Crafting>
       </skillRequirements>
     </recipeMaker>
-    <tradeTags Inherit="False" />
+    <tradeTags Inherit="False">
+      <li>ExoticMisc</li>
+    </tradeTags>
     <researchPrerequisites>
       <li>CrystalTech</li>
     </researchPrerequisites>
@@ -336,7 +344,9 @@
         <Crafting>9</Crafting>
       </skillRequirements>
     </recipeMaker>
-    <tradeTags Inherit="False" />
+    <tradeTags Inherit="False">
+      <li>ExoticMisc</li>
+    </tradeTags>
     <researchPrerequisites>
       <li>CrystalTech</li>
     </researchPrerequisites>

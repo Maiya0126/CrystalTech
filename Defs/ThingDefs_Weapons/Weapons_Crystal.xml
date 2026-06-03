@@ -134,7 +134,9 @@
         <cooldownTime>1.73</cooldownTime>
       </li>
     </tools>
-    <tradeTags Inherit="False" />
+    <tradeTags Inherit="False">
+      <li>WeaponMelee</li>
+    </tradeTags>
     <useHitPoints>true</useHitPoints>
     <weaponClasses>
       <li>Melee</li>
@@ -242,7 +244,9 @@
         <cooldownTime>2.6</cooldownTime>
       </li>
     </tools>
-    <tradeTags Inherit="False" />
+    <tradeTags Inherit="False">
+      <li>WeaponMelee</li>
+    </tradeTags>
     <useHitPoints>true</useHitPoints>
     <weaponClasses>
       <li>Melee</li>
@@ -336,7 +340,9 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <tradeTags Inherit="False" />
+    <tradeTags Inherit="False">
+      <li>WeaponRanged</li>
+    </tradeTags>
     <useHitPoints>true</useHitPoints>
     <verbs>
       <li>
@@ -431,7 +437,9 @@
     <thingCategories Inherit="False">
       <li>WeaponsMelee</li>
     </thingCategories>
-    <tradeTags Inherit="False" />
+    <tradeTags Inherit="False">
+      <li>ExoticMisc</li>
+    </tradeTags>
     <weaponTags Inherit="False" />
   </ThingDef>
 
@@ -507,7 +515,9 @@
       <li>CrystalTech</li>
     </researchPrerequisites>
     <generateCommonality>0</generateCommonality>
-    <tradeTags Inherit="False" />
+    <tradeTags Inherit="False">
+      <li>Armor</li>
+    </tradeTags>
     <relicChance>0</relicChance>
   </ThingDef>
 
