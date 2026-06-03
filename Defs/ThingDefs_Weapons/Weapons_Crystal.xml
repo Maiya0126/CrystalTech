@@ -85,7 +85,8 @@
       </skillRequirements>
       <displayPriority>430</displayPriority>
     </recipeMaker>
-    <relicChance>2</relicChance>
+    <generateCommonality>0</generateCommonality>
+    <relicChance>0</relicChance>
     <rotatable>false</rotatable>
     <selectable>true</selectable>
     <smeltable>false</smeltable>
@@ -104,9 +105,6 @@
       <li>WeaponsMelee</li>
     </thingCategories>
     <thingClass>ThingWithComps</thingClass>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
     <tickerType>Never</tickerType>
     <tools>
       <li>
@@ -136,18 +134,13 @@
         <cooldownTime>1.73</cooldownTime>
       </li>
     </tools>
-    <tradeTags>
-      <li>WeaponMelee</li>
-    </tradeTags>
+    <tradeTags Inherit="False" />
     <useHitPoints>true</useHitPoints>
     <weaponClasses>
       <li>Melee</li>
       <li>MeleePiercer</li>
     </weaponClasses>
-    <weaponTags>
-      <li>MedievalMeleeAdvanced</li>
-      <li>LongSword</li>
-    </weaponTags>
+    <weaponTags Inherit="False" />
   </ThingDef>
 
   <!-- 透晶长矛 -->
@@ -208,7 +201,8 @@
       </skillRequirements>
       <displayPriority>340</displayPriority>
     </recipeMaker>
-    <relicChance>1</relicChance>
+    <generateCommonality>0</generateCommonality>
+    <relicChance>0</relicChance>
     <rotatable>false</rotatable>
     <selectable>true</selectable>
     <smeltable>false</smeltable>
@@ -227,9 +221,6 @@
       <li>WeaponsMelee</li>
     </thingCategories>
     <thingClass>ThingWithComps</thingClass>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
     <tickerType>Never</tickerType>
     <tools>
       <li>
@@ -251,19 +242,13 @@
         <cooldownTime>2.6</cooldownTime>
       </li>
     </tools>
-    <tradeTags>
-      <li>WeaponMelee</li>
-    </tradeTags>
+    <tradeTags Inherit="False" />
     <useHitPoints>true</useHitPoints>
     <weaponClasses>
       <li>Melee</li>
       <li>MeleePiercer</li>
     </weaponClasses>
-    <weaponTags>
-      <li>NeolithicMeleeAdvanced</li>
-      <li>MedievalMeleeAdvanced</li>
-      <li>Spear</li>
-    </weaponTags>
+    <weaponTags Inherit="False" />
   </ThingDef>
 
   <!-- 透晶大弓 -->
@@ -314,7 +299,8 @@
       </skillRequirements>
       <displayPriority>535</displayPriority>
     </recipeMaker>
-    <relicChance>1</relicChance>
+    <generateCommonality>0</generateCommonality>
+    <relicChance>0</relicChance>
     <rotatable>false</rotatable>
     <rotateInShelves>false</rotateInShelves>
     <selectable>true</selectable>
@@ -338,9 +324,6 @@
       <li>WeaponsRanged</li>
     </thingCategories>
     <thingClass>ThingWithComps</thingClass>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
     <tickerType>Never</tickerType>
     <tools>
       <li>
@@ -353,9 +336,7 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <tradeTags>
-      <li>WeaponRanged</li>
-    </tradeTags>
+    <tradeTags Inherit="False" />
     <useHitPoints>true</useHitPoints>
     <verbs>
       <li>
@@ -371,9 +352,7 @@
       <li>Ranged</li>
       <li>RangedHeavy</li>
     </weaponClasses>
-    <weaponTags>
-      <li>NeolithicRangedHeavy</li>
-    </weaponTags>
+    <weaponTags Inherit="False" />
   </ThingDef>
 
   <!-- 透晶神针 -->
@@ -395,9 +374,6 @@
       <CrystalMaterial>3</CrystalMaterial>
       <MedicineUltratech>1</MedicineUltratech>
     </costList>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
     <statBases>
       <WorkToMake>12000</WorkToMake>
       <Mass>0.05</Mass>
@@ -455,12 +431,8 @@
     <thingCategories Inherit="False">
       <li>WeaponsMelee</li>
     </thingCategories>
-    <tradeTags>
-      <li>WeaponMelee</li>
-    </tradeTags>
-    <weaponTags>
-      <li>MedievalMeleeAdvanced</li>
-    </weaponTags>
+    <tradeTags Inherit="False" />
+    <weaponTags Inherit="False" />
   </ThingDef>
 
   <!-- 透晶盾 -->
@@ -507,9 +479,7 @@
       <layers>
         <li>Belt</li>
       </layers>
-      <tags>
-        <li>BeltDefense</li>
-      </tags>
+      <tags Inherit="False" />
     </apparel>
     <comps>
       <li Class="CompProperties_Shield">
@@ -536,12 +506,9 @@
     <researchPrerequisites>
       <li>CrystalTech</li>
     </researchPrerequisites>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
-    <tradeTags Inherit="False">
-      <li>Armor</li>
-    </tradeTags>
+    <generateCommonality>0</generateCommonality>
+    <tradeTags Inherit="False" />
+    <relicChance>0</relicChance>
   </ThingDef>
 
 </Defs>
