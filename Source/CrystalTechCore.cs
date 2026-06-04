@@ -215,10 +215,10 @@ namespace CrystalTech
                 if (thing?.def != null && CrystalTechCore.IsTransparentWall(thing.def))
                 {
                     FlushGraphicCache(thing);
+                    map.mapDrawer.MapMeshDirty(thing.Position, MapMeshFlagDefOf.Things);
                     count++;
                 }
             }
-            map.mapDrawer.WholeMapChanged(MapMeshFlagDefOf.Things);
             Log.Message("[Crystal Tech] Flushed graphic cache for " + count + " crystal things");
         }
     }
