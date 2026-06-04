@@ -221,9 +221,54 @@ namespace CrystalTech
             }
             Log.Message("[Crystal Tech] Flushed graphic cache for " + count + " crystal things");
         }
+
+        public static void RefreshAllCrystalGlowers(Map map)
+        {
+            if (map == null) return;
+            foreach (var thing in map.listerThings.AllThings)
+            {
+                if (thing?.def == null) continue;
+                bool isCrystal = IsTransparentWall(thing.def) || IsCrystalFurniture(thing.def) || CrystalItemDefNames.Contains(thing.def.defName);
+                if (!isCrystal) continue;
+                var glower = thing.TryGetComp<CompGlower>();
+                if (glower != null)
+                {
+                    glower.UpdateLit(map);
+                }
+            }
+        }
     }
 
     // ========== Transparent wall rendering ==========
+
+    [HarmonyPatch(typeof(CompGlower), "ShouldBeLitNow", MethodType.Getter)]
+    public static class CompGlower_ShouldBeLitNow_CrystalPatch
+    {
+        static void Postfix(CompGlower __instance, ref bool __result)
+        {
+            if (!__result) return;
+            if (Main.Settings == null) return;
+            ThingDef def = __instance.parent?.def;
+            if (def == null) return;
+
+            if (!Main.Settings.enableWallGlow && CrystalTechCore.IsTransparentWall(def))
+            {
+                __result = false;
+                return;
+            }
+            if (!Main.Settings.enableFurnitureGlow && CrystalTechCore.IsCrystalFurniture(def))
+            {
+                __result = false;
+                return;
+            }
+            bool isCrystalItem = CrystalTechCore.CrystalItemDefNames.Contains(def.defName);
+            if (!Main.Settings.enableItemGlow && isCrystalItem)
+            {
+                __result = false;
+                return;
+            }
+        }
+    }
 
     [HarmonyPatch(typeof(Thing), "DrawColor", MethodType.Getter)]
     public static class Thing_DrawColor_TransparentPatch
@@ -263,6 +308,30 @@ namespace CrystalTech
             {
                 __instance.CurLevel = Mathf.Min(cur + 0.0025f * 3f, 0.8f);
             }
+        }
+    }
+
+    [HarmonyPatch(typeof(GenStuff), "DefaultStuffFor")]
+    public static class GenStuff_DefaultStuffFor_CrystalPatch
+    {
+        static bool Prefix(BuildableDef bd, ref ThingDef __result)
+        {
+            if (bd is ThingDef thingDef && thingDef.MadeFromStuff && thingDef.stuffCategories != null)
+            {
+                foreach (var cat in thingDef.stuffCategories)
+                {
+                    if (cat.defName == "Crystalline")
+                    {
+                        var crystalMat = DefDatabase<ThingDef>.GetNamedSilentFail("CrystalMaterial");
+                        if (crystalMat != null)
+                        {
+                            __result = crystalMat;
+                            return false;
+                        }
+                    }
+                }
+            }
+            return true;
         }
     }
 

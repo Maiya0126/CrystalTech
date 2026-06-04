@@ -6,7 +6,9 @@
   <CrystalTech_SettingLight>开启室内透光功能（阳光穿透透晶墙）</CrystalTech_SettingLight>
   <CrystalTech_SettingYield>透晶材料制作产量倍率：{0}x</CrystalTech_SettingYield>
   <CrystalTech_SettingAntiStealth>开启反隐形检测</CrystalTech_SettingAntiStealth>
-  <CrystalTech_SettingItemGlow>开启透晶物品发光</CrystalTech_SettingItemGlow>
+  <CrystalTech_SettingWallGlow>开启透晶墙发光</CrystalTech_SettingWallGlow>
+  <CrystalTech_SettingFurnitureGlow>开启透晶家具发光</CrystalTech_SettingFurnitureGlow>
+  <CrystalTech_SettingItemGlow>开启透晶武器与装备发光</CrystalTech_SettingItemGlow>
   <CrystalTech_MilestoneMessage>透晶科技里程碑达成！已建造 {0} 座透晶建筑！</CrystalTech_MilestoneMessage>
   <CrystalTech_DetectorTriggered>透晶探测器检测到隐形生物！</CrystalTech_DetectorTriggered>
   <CrystalTech_CloakedDetected>检测到隐形生物</CrystalTech_CloakedDetected>

@@ -43,6 +43,7 @@
     <stuffCategories>
       <li>Crystalline</li>
     </stuffCategories>
+      <defaultStuff>CrystalMaterial</defaultStuff>
     <surfaceType>Eat</surfaceType>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Furniture</designationCategory>
@@ -119,6 +120,7 @@
     <stuffCategories>
       <li>Crystalline</li>
     </stuffCategories>
+      <defaultStuff>CrystalMaterial</defaultStuff>
     <surfaceType>Eat</surfaceType>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Furniture</designationCategory>
@@ -198,6 +200,7 @@
     <stuffCategories>
       <li>Crystalline</li>
     </stuffCategories>
+      <defaultStuff>CrystalMaterial</defaultStuff>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Furniture</designationCategory>
     <uiOrder>2411</uiOrder>
@@ -280,6 +283,7 @@
     <stuffCategories>
       <li>Crystalline</li>
     </stuffCategories>
+      <defaultStuff>CrystalMaterial</defaultStuff>
     <costList>
       <Silver>10</Silver>
     </costList>
@@ -361,6 +365,7 @@
     <stuffCategories>
       <li>Crystalline</li>
     </stuffCategories>
+      <defaultStuff>CrystalMaterial</defaultStuff>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Furniture</designationCategory>
     <uiIconScale>0.9</uiIconScale>
@@ -458,6 +463,7 @@
     <stuffCategories>
       <li>Crystalline</li>
     </stuffCategories>
+      <defaultStuff>CrystalMaterial</defaultStuff>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Furniture</designationCategory>
     <uiIconScale>0.9</uiIconScale>

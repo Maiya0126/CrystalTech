@@ -6,7 +6,9 @@
   <CrystalTech_SettingLight>Enable indoor light transmission through transparent walls</CrystalTech_SettingLight>
   <CrystalTech_SettingYield>Crystal material crafting yield multiplier: {0}x</CrystalTech_SettingYield>
   <CrystalTech_SettingAntiStealth>Enable anti-stealth detection</CrystalTech_SettingAntiStealth>
-  <CrystalTech_SettingItemGlow>Enable crystal item glow</CrystalTech_SettingItemGlow>
+  <CrystalTech_SettingWallGlow>Enable crystal wall glow</CrystalTech_SettingWallGlow>
+  <CrystalTech_SettingFurnitureGlow>Enable crystal furniture glow</CrystalTech_SettingFurnitureGlow>
+  <CrystalTech_SettingItemGlow>Enable crystal weapon and apparel glow</CrystalTech_SettingItemGlow>
   <CrystalTech_MilestoneMessage>Crystal Tech milestone reached! {0} crystal buildings built!</CrystalTech_MilestoneMessage>
   <CrystalTech_DetectorTriggered>Crystal detector has detected an invisible creature!</CrystalTech_DetectorTriggered>
   <CrystalTech_CloakedDetected>Invisible creature detected</CrystalTech_CloakedDetected>

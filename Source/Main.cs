@@ -14,6 +14,8 @@ namespace CrystalTech
         public float craftingYieldMultiplier = 1f;
         public bool enableAntiStealth = true;
         public bool enableItemGlow = true;
+        public bool enableWallGlow = true;
+        public bool enableFurnitureGlow = true;
 
         public override void ExposeData()
         {
@@ -24,6 +26,8 @@ namespace CrystalTech
             Scribe_Values.Look(ref craftingYieldMultiplier, "craftingYieldMultiplier", 1f);
             Scribe_Values.Look(ref enableAntiStealth, "enableAntiStealth", true);
             Scribe_Values.Look(ref enableItemGlow, "enableItemGlow", true);
+            Scribe_Values.Look(ref enableWallGlow, "enableWallGlow", true);
+            Scribe_Values.Look(ref enableFurnitureGlow, "enableFurnitureGlow", true);
         }
     }
 
@@ -63,6 +67,9 @@ namespace CrystalTech
             listing.Gap(12f);
             bool oldMood = Settings.enableMoodEffect;
             bool oldLight = Settings.enableLightTransmission;
+            bool oldWallGlow = Settings.enableWallGlow;
+            bool oldFurnitureGlow = Settings.enableFurnitureGlow;
+            bool oldItemGlow = Settings.enableItemGlow;
             listing.CheckboxLabeled("CrystalTech_SettingMood".Translate(), ref Settings.enableMoodEffect);
             listing.CheckboxLabeled("CrystalTech_SettingLight".Translate(), ref Settings.enableLightTransmission);
             if (oldMood != Settings.enableMoodEffect || oldLight != Settings.enableLightTransmission)
@@ -79,7 +86,16 @@ namespace CrystalTech
 
             listing.Gap(12f);
             listing.CheckboxLabeled("CrystalTech_SettingAntiStealth".Translate(), ref Settings.enableAntiStealth);
+            listing.CheckboxLabeled("CrystalTech_SettingWallGlow".Translate(), ref Settings.enableWallGlow);
+            listing.CheckboxLabeled("CrystalTech_SettingFurnitureGlow".Translate(), ref Settings.enableFurnitureGlow);
             listing.CheckboxLabeled("CrystalTech_SettingItemGlow".Translate(), ref Settings.enableItemGlow);
+            if (oldWallGlow != Settings.enableWallGlow || oldFurnitureGlow != Settings.enableFurnitureGlow || oldItemGlow != Settings.enableItemGlow)
+            {
+                foreach (var map in Find.Maps)
+                {
+                    CrystalTechCore.RefreshAllCrystalGlowers(map);
+                }
+            }
 
             listing.End();
             Settings.Write();
