@@ -6,4 +6,7 @@
 
   <Crystalline.label>crystalline</Crystalline.label>
 
+  <CrystalShard.label>trans-crystal shard</CrystalShard.label>
+  <CrystalShard.description>A shard of mother-crystal that fell from the void aboard a meteorite. It hums faintly when crystal structures are near, as if calling to its kin. Researchers say having a shard nearby doubles inspiration - and it can be refined into crystal material at a machining table.</CrystalShard.description>
+
 </LanguageData>

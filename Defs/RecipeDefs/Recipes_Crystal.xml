@@ -88,4 +88,38 @@
     <researchPrerequisite>CrystalTech</researchPrerequisite>
   </RecipeDef>
 
+  <!-- 母晶碎块精炼：碎块 -> 透晶材料 -->
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>Refine_CrystalShard</defName>
+    <label>refine trans-crystal shard</label>
+    <description>Refine a mother-crystal shard into pure trans-crystal material.</description>
+    <jobString>Refining trans-crystal shard.</jobString>
+    <workAmount>600</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CrystalShard</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CrystalShard</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CrystalMaterial>10</CrystalMaterial>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <researchPrerequisite>CrystalTech</researchPrerequisite>
+  </RecipeDef>
+
 </Defs>

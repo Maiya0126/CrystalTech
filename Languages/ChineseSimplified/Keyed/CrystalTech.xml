@@ -14,4 +14,17 @@
   <CrystalTech_CloakedDetected>检测到隐形生物</CrystalTech_CloakedDetected>
   <CrystalTech_AcupunctureCured>{0}的透晶针灸疗程结束，治愈了{1}项伤病。</CrystalTech_AcupunctureCured>
 
+  <!-- 空投叙事 -->
+  <CrystalTech_StartDropLabel>陨晶坠落的回响</CrystalTech_StartDropLabel>
+  <CrystalTech_StartDropText>夜里一声闷响，一颗流星拖着淡蓝的尾迹坠落在附近。落地的东西并非普通陨石，而是一个半透明的晶质舱体，里面的透晶材料与母晶碎块散落一地，仍在微微发光。\n\n有人认出了这种晶体——传闻中能"以晶筑居、让光住进屋里"的透晶。也许该研究一下如何利用它。</CrystalTech_StartDropText>
+  <CrystalTech_RewardTechLabel>晶源同鸣：透晶样器</CrystalTech_RewardTechLabel>
+  <CrystalTech_RewardTechText>研究完成的那一刻，散落在殖民地的母晶碎块同时亮起，发出一声悠长的嗡鸣。远处天际有微光坠落——一个晶质舱体应声而至，里面是透晶武器的样器：长剑、长矛、大弓，还有一柄传闻能"点穴封脉"的神针。\n\n样器可以直接使用，也可以拆解研究。批量制造仍需在锻造台自行锻造。</CrystalTech_RewardTechText>
+  <CrystalTech_RewardAdvancedLabel>晶源同鸣：进阶馈赠</CrystalTech_RewardAdvancedLabel>
+  <CrystalTech_RewardAdvancedText>透晶进阶研究完成，晶格电路与太阳薄膜的秘密已被掌握。母晶再次嗡鸣，一个晶质舱体破空而降，送来了运用新技术的样器：透晶盾、护目镜与隐形眼镜。\n\n盾可以挡下射来的箭矢，而里面的人却能开火还击。</CrystalTech_RewardAdvancedText>
+  <CrystalTech_RewardReinforcedLabel>晶源同鸣：终章馈赠</CrystalTech_RewardReinforcedLabel>
+  <CrystalTech_RewardReinforcedText>透晶强化的最后一道工序完成，晶格致密化的工艺已臻圆满。母晶发出了最后一声嗡鸣——这一次，坠落的舱体格外沉重，透晶的全套样器整齐排列其中：武器、盾与全部饰品。\n\n这批样器品质精良，是晶源对这个殖民地掌握透晶之力的最终认可。</CrystalTech_RewardReinforcedText>
+  <CrystalTech_RewardTechOldSaveText>透晶科技的研究档案补全归档。母晶碎块感应到殖民地已掌握透晶之力，一个迟到的晶质舱体从天而降，送来了透晶武器的样器：长剑、长矛、大弓与神针。</CrystalTech_RewardTechOldSaveText>
+  <CrystalTech_RewardAdvancedOldSaveText>透晶进阶的研究档案补全归档。母晶嗡鸣，晶质舱体破空而降，送来了运用新技术的样器：透晶盾、护目镜与隐形眼镜。</CrystalTech_RewardAdvancedOldSaveText>
+  <CrystalTech_RewardReinforcedOldSaveText>透晶强化的研究档案补全归档。母晶最后一声嗡鸣，全套透晶样器随晶质舱体坠地——武器、盾与全部饰品，是晶源的最终认可。</CrystalTech_RewardReinforcedOldSaveText>
+
 </LanguageData>

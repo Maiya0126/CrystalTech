@@ -14,4 +14,17 @@
   <CrystalTech_CloakedDetected>Invisible creature detected</CrystalTech_CloakedDetected>
   <CrystalTech_AcupunctureCured>{0}'s crystal acupuncture session is complete. {1} health conditions cured.</CrystalTech_AcupunctureCured>
 
+  <!-- Drop pod narrative -->
+  <CrystalTech_StartDropLabel>Echo of a fallen crystal</CrystalTech_StartDropLabel>
+  <CrystalTech_StartDropText>Something streaked across the night sky and thudded into the ground nearby. It was no ordinary meteor, but a translucent crystal pod, its cargo of trans-crystal material and mother-crystal shards scattered and still glowing.\n\nSomeone recognizes the crystal - the legendary trans-crystal said to let sunlight pour into every room. Perhaps it is worth researching.</CrystalTech_StartDropText>
+  <CrystalTech_RewardTechLabel>Crystal resonance: weapon samples</CrystalTech_RewardTechLabel>
+  <CrystalTech_RewardTechText>The moment the research completed, every mother-crystal shard in the colony lit up and hummed in unison. A pod fell from the sky in answer - inside were sample weapons of trans-crystal: longsword, spear, greatbow, and a divine needle said to lock a body's meridians with a single strike.\n\nThe samples are ready to use. Mass production still requires smithing.</CrystalTech_RewardTechText>
+  <CrystalTech_RewardAdvancedLabel>Crystal resonance: advanced gifts</CrystalTech_RewardAdvancedLabel>
+  <CrystalTech_RewardAdvancedText>Advanced crystal research is complete - the secrets of crystal lattice circuits and solar film are yours. The mother crystal hums again, and a pod delivers samples of the new technology: a crystal shield, goggles, and contact lenses.\n\nThe shield stops incoming arrows - while letting its wearer fire back through it.</CrystalTech_RewardAdvancedText>
+  <CrystalTech_RewardReinforcedLabel>Crystal resonance: final gifts</CrystalTech_RewardReinforcedLabel>
+  <CrystalTech_RewardReinforcedText>The final step of crystal reinforcement is done - the lattice densification process is perfected. The mother crystal gives one last, long hum, and a heavier pod lands with a full set of trans-crystal samples: weapons, shield, and every accessory.\n\nThe crystal source's final acknowledgment of a colony that has mastered trans-crystal.</CrystalTech_RewardReinforcedText>
+  <CrystalTech_RewardTechOldSaveText>The crystal tech research archive has been reconciled. Sensing the colony's mastery, the mother-crystal shards call down a late-arriving pod with sample weapons: longsword, spear, greatbow, and the divine needle.</CrystalTech_RewardTechOldSaveText>
+  <CrystalTech_RewardAdvancedOldSaveText>The advanced crystal research archive has been reconciled. The mother crystal hums, delivering samples of the new technology: crystal shield, goggles, and contact lenses.</CrystalTech_RewardAdvancedOldSaveText>
+  <CrystalTech_RewardReinforcedOldSaveText>The reinforced crystal research archive has been reconciled. With a final hum, a full set of trans-crystal samples lands - weapons, shield, and every accessory. The crystal source's final acknowledgment.</CrystalTech_RewardReinforcedOldSaveText>
+
 </LanguageData>

@@ -4,7 +4,7 @@
   <ResearchProjectDef>
     <defName>CrystalTech</defName>
     <label>crystal tech</label>
-    <description>Learn to manufacture advanced transparent building materials with integrated power transmission, vacuum isolation, and self-cleaning properties.</description>
+    <description>Learn to manufacture advanced transparent building materials with integrated power transmission, vacuum isolation, and self-cleaning properties. Trans-crystal shards carried by the fallen cargo pod may help - they can be refined into crystal material at a machining table.</description>
     <baseCost>800</baseCost>
     <techLevel>Industrial</techLevel>
     <researchViewX>4</researchViewX>

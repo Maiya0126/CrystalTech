@@ -9,4 +9,8 @@
   <Make_CrystalMaterialBulk.description>Process steel and silver into transparent crystal material in bulk.</Make_CrystalMaterialBulk.description>
   <Make_CrystalMaterialBulk.jobString>Making crystal material in bulk.</Make_CrystalMaterialBulk.jobString>
 
+  <Refine_CrystalShard.label>refine trans-crystal shard</Refine_CrystalShard.label>
+  <Refine_CrystalShard.description>Refine a mother-crystal shard into pure crystal material.</Refine_CrystalShard.description>
+  <Refine_CrystalShard.jobString>Refining trans-crystal shard.</Refine_CrystalShard.jobString>
+
 </LanguageData>

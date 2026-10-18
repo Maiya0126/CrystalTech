@@ -67,4 +67,41 @@
     <label>crystalline</label>
   </StuffCategoryDef>
 
+  <!-- 透晶母晶碎块：陨石带来的研究信物，研究消耗品 -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>CrystalShard</defName>
+    <label>trans-crystal shard</label>
+    <description>A shard of mother-crystal that fell from the void aboard a meteorite. It hums faintly when crystal structures are near, as if calling to its kin. Researchers need shards like this to attune their instruments to trans-crystal frequencies.</description>
+    <graphicData>
+      <texPath>Things/Item/CrystalMaterial</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.7</drawSize>
+      <color>(180,200,255)</color>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>120</MarketValue>
+      <Mass>0.2</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>6</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>50</stackLimit>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(180,200,255,0)</glowColor>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+
 </Defs>

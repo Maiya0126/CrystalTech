@@ -9,4 +9,8 @@
   <Make_CrystalMaterialBulk.description>批量将钢铁和银加工成透明的透晶材料。</Make_CrystalMaterialBulk.description>
   <Make_CrystalMaterialBulk.jobString>正在批量制作透晶材料。</Make_CrystalMaterialBulk.jobString>
 
+  <Refine_CrystalShard.label>精炼透晶母晶碎块</Refine_CrystalShard.label>
+  <Refine_CrystalShard.description>将一块透晶母晶碎块精炼为纯净的透晶材料。</Refine_CrystalShard.description>
+  <Refine_CrystalShard.jobString>正在精炼透晶母晶碎块。</Refine_CrystalShard.jobString>
+
 </LanguageData>

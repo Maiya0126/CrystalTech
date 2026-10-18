@@ -6,4 +6,7 @@
 
   <Crystalline.label>透晶</Crystalline.label>
 
+  <CrystalShard.label>透晶母晶碎块</CrystalShard.label>
+  <CrystalShard.description>随陨石从虚空坠落的母晶碎块。靠近透晶结构时会轻轻嗡鸣，仿佛在呼唤同类。据说研究透晶科技时，有碎块在侧能让灵感事半功倍；也可以在机械台将其精炼为透晶材料。</CrystalShard.description>
+
 </LanguageData>
