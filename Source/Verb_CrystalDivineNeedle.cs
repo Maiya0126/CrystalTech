@@ -18,20 +18,24 @@ namespace CrystalTech
             dinfo.SetBodyRegion(BodyPartHeight.Undefined, BodyPartDepth.Outside);
             DamageWorker.DamageResult result = pawn.TakeDamage(dinfo);
 
-            pawn.health.AddHediff(HediffDefOf.Anesthetic);
+            // 麻痹：清醒但不能动（敌我通用）
+            pawn.health.AddHediff(CrystalTechDefOf.CrystalNeedleParalysis);
 
             if (isAlly)
             {
-                if (!pawn.health.hediffSet.HasHediff(CrystalTechDefOf.CrystalRegenerationHediff))
+                // 针灸：倒计时结束痊愈（已有则不重复施加 = 天然冷却）
+                if (!pawn.health.hediffSet.HasHediff(CrystalTechDefOf.CrystalAcupuncture))
                 {
-                    pawn.health.AddHediff(CrystalTechDefOf.CrystalRegenerationHediff);
+                    pawn.health.AddHediff(CrystalTechDefOf.CrystalAcupuncture);
                 }
             }
             else
             {
-                Hediff bloodLoss = HediffMaker.MakeHediff(HediffDefOf.BloodLoss, pawn);
-                bloodLoss.Severity = 0.3f;
-                pawn.health.AddHediff(bloodLoss);
+                // 血崩：持续出血，封顶不致死
+                if (!pawn.health.hediffSet.HasHediff(CrystalTechDefOf.CrystalHemorrhage))
+                {
+                    pawn.health.AddHediff(CrystalTechDefOf.CrystalHemorrhage);
+                }
             }
 
             return result;

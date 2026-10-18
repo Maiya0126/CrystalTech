@@ -2,4 +2,10 @@
 <LanguageData>
   <CrystalRegenerationHediff.label>crystal regeneration</CrystalRegenerationHediff.label>
   <CrystalRegenerationHediff.description>Crystalline regenerative energy courses through the body, accelerating wound healing and boosting immunity.</CrystalRegenerationHediff.description>
+  <CrystalNeedleParalysis.label>crystal needle paralysis</CrystalNeedleParalysis.label>
+  <CrystalNeedleParalysis.description>A trans-crystal nerve lock from the divine needle. The target remains conscious but cannot move.</CrystalNeedleParalysis.description>
+  <CrystalAcupuncture.label>crystal acupuncture</CrystalAcupuncture.label>
+  <CrystalAcupuncture.description>Trans-crystal acupuncture energy flows through the body's meridians, accelerating recovery. When the session completes, most diseases, wounds and blood loss will be cured. Chronic conditions, implants and permanent scars are beyond its reach.</CrystalAcupuncture.description>
+  <CrystalHemorrhage.label>crystal hemorrhage</CrystalHemorrhage.label>
+  <CrystalHemorrhage.description>The divine needle's strike has opened the target's blood vessels to crystalline resonance. Blood drains steadily until the resonance fades. It will not kill on its own, but leaves the victim severely weakened.</CrystalHemorrhage.description>
 </LanguageData>

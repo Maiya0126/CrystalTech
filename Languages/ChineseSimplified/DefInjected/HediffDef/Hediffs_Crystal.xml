@@ -2,4 +2,10 @@
 <LanguageData>
   <CrystalRegenerationHediff.label>晶能再生</CrystalRegenerationHediff.label>
   <CrystalRegenerationHediff.description>晶能再生之力流遍全身，加速伤愈，提振免疫。</CrystalRegenerationHediff.description>
+  <CrystalNeedleParalysis.label>透晶麻痹</CrystalNeedleParalysis.label>
+  <CrystalNeedleParalysis.description>透晶神针封住了经络，意识清醒，身体却动弹不得。</CrystalNeedleParalysis.description>
+  <CrystalAcupuncture.label>透晶针灸</CrystalAcupuncture.label>
+  <CrystalAcupuncture.description>透晶针灸之力沿着经络流转，加速恢复。针灸结束时，大多数疾病、伤口和失血将被治愈。慢性病、义体植入和永久疤痕不在其列。</CrystalAcupuncture.description>
+  <CrystalHemorrhage.label>透晶血崩</CrystalHemorrhage.label>
+  <CrystalHemorrhage.description>神针一击震开了血脉，透晶共鸣之下血液不断流失，直到共鸣消散。它不会直接致命，但会让受害者严重虚弱。</CrystalHemorrhage.description>
 </LanguageData>

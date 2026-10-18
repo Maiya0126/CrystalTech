@@ -12,5 +12,6 @@
   <CrystalTech_MilestoneMessage>Crystal Tech milestone reached! {0} crystal buildings built!</CrystalTech_MilestoneMessage>
   <CrystalTech_DetectorTriggered>Crystal detector has detected an invisible creature!</CrystalTech_DetectorTriggered>
   <CrystalTech_CloakedDetected>Invisible creature detected</CrystalTech_CloakedDetected>
+  <CrystalTech_AcupunctureCured>{0}'s crystal acupuncture session is complete. {1} health conditions cured.</CrystalTech_AcupunctureCured>
 
 </LanguageData>

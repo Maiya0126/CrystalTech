@@ -12,5 +12,6 @@
   <CrystalTech_MilestoneMessage>透晶科技里程碑达成！已建造 {0} 座透晶建筑！</CrystalTech_MilestoneMessage>
   <CrystalTech_DetectorTriggered>透晶探测器检测到隐形生物！</CrystalTech_DetectorTriggered>
   <CrystalTech_CloakedDetected>检测到隐形生物</CrystalTech_CloakedDetected>
+  <CrystalTech_AcupunctureCured>{0}的透晶针灸疗程结束，治愈了{1}项伤病。</CrystalTech_AcupunctureCured>
 
 </LanguageData>
