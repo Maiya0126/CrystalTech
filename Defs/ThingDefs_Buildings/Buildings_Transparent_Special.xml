@@ -42,7 +42,8 @@
     <defName>TransparentCeilingLamp</defName>
     <label>transparent ceiling lamp</label>
     <description>A sleek transparent lamp made of reinforced crystal material. Mounts on the ceiling providing clean, bright illumination without occupying floor space. Self-powered by integrated solar crystal. Detects cloaked creatures. Fireproof.</description>
-    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <altitudeLayer>Blueprint</altitudeLayer>
+    <drawerType>RealtimeOnly</drawerType>
     <passability>Standable</passability>
     <fillPercent>0</fillPercent>
     <pathCost>0</pathCost>
@@ -150,6 +151,8 @@
     <building>
       <isAirtight>true</isAirtight>
       <isWall>true</isWall>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <supportsWallAttachments>true</supportsWallAttachments>
       <canPlaceOverWall>true</canPlaceOverWall>
       <canExchangeVacuum>true</canExchangeVacuum>
       <blueprintGraphicData>

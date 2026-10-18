@@ -37,11 +37,17 @@
   <ReinforcedTransparentDoor.label>reinforced transparent door</ReinforcedTransparentDoor.label>
   <ReinforcedTransparentDoor.description>An ultra-durable transparent door reinforced with advanced crystal binding techniques. Nearly indestructible while maintaining full light transmission. Emits a warm golden glow.</ReinforcedTransparentDoor.description>
 
+  <ReinforcedTransparentAutodoor.label>reinforced transparent autodoor</ReinforcedTransparentAutodoor.label>
+  <ReinforcedTransparentAutodoor.description>An ultra-durable transparent autodoor reinforced with advanced crystal binding techniques. Powered operation allows passage without slowing down. Integrates power transmission, vacuum isolation, solar generation, and cloaked creature detection. Emits a warm golden glow.</ReinforcedTransparentAutodoor.description>
+
   <ReinforcedTransparentFence.label>reinforced transparent fence</ReinforcedTransparentFence.label>
   <ReinforcedTransparentFence.description>An ultra-durable transparent fence reinforced with advanced crystal binding techniques. Light passes through freely. Emits a warm golden glow.</ReinforcedTransparentFence.description>
 
   <ReinforcedTransparentFenceGate.label>reinforced transparent fence gate</ReinforcedTransparentFenceGate.label>
   <ReinforcedTransparentFenceGate.description>An ultra-durable transparent fence gate reinforced with advanced crystal binding techniques. Light passes through freely. Emits a warm golden glow.</ReinforcedTransparentFenceGate.description>
+
+  <CrystalRoofPanel.label>crystal roof panel</CrystalRoofPanel.label>
+  <CrystalRoofPanel.description>A translucent crystal roof panel. Each panel carries its own self-supporting lattice frame, so it can be raised anywhere to shelter from rain and snow while admitting sunlight. When built, it instantly forms a crystal roof over its cell. Self-powered by ambient light, it softly illuminates the room below. Fireproof.</CrystalRoofPanel.description>
 
   <CrystalFloorWindow.label>crystal floor window</CrystalFloorWindow.label>
   <CrystalFloorWindow.description>A floor-to-ceiling transparent window made of crystal material. Can be placed over existing walls to create a see-through window that lets light pass through from both sides. Emits a soft blue glow. Fireproof and airtight.</CrystalFloorWindow.description>

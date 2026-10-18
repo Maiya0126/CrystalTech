@@ -62,6 +62,8 @@
     <building>
       <isAirtight>true</isAirtight>
       <isWall>true</isWall>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <supportsWallAttachments>true</supportsWallAttachments>
       <canExchangeVacuum>true</canExchangeVacuum>
       <relatedBuildCommands>
         <li>TransparentDoor</li>

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+  <!-- 透晶屋顶（不坍塌，由透晶屋顶板生成） -->
+  <RoofDef>
+    <defName>CrystalRoofConstructed</defName>
+    <label>crystal roof</label>
+    <description>A self-supporting translucent crystal roof. It never collapses.</description>
+    <canCollapse>false</canCollapse>
+  </RoofDef>
+
   <!-- 进阶透晶墙 -->
   <ThingDef ParentName="BuildingBase">
     <defName>AdvancedTransparentWall</defName>
@@ -64,6 +72,8 @@
     <building>
       <isAirtight>true</isAirtight>
       <isWall>true</isWall>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <supportsWallAttachments>true</supportsWallAttachments>
       <canExchangeVacuum>true</canExchangeVacuum>
       <relatedBuildCommands>
         <li>AdvancedTransparentDoor</li>
@@ -396,6 +406,68 @@
     <researchPrerequisites>
       <li>CrystalAdvanced</li>
       <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 透晶屋顶板 -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>CrystalRoofPanel</defName>
+    <label>crystal roof panel</label>
+    <description>A translucent crystal roof panel. Each panel carries its own self-supporting lattice frame, so it can be raised anywhere to shelter from rain and snow while admitting sunlight. When built, it instantly forms a crystal roof over its cell. Self-powered by ambient light, it softly illuminates the room below. Fireproof.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <drawStyleCategory>Fill2D</drawStyleCategory>
+    <altitudeLayer>Blueprint</altitudeLayer>
+    <passability>Standable</passability>
+    <fillPercent>0</fillPercent>
+    <pathCost>0</pathCost>
+    <canOverlapZones>true</canOverlapZones>
+    <clearBuildingArea>false</clearBuildingArea>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Things/Building/CrystalRoof</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(1.05,1.05)</drawSize>
+    </graphicData>
+    <drawDamagedOverlay>false</drawDamagedOverlay>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Mass>4</Mass>
+      <Flammability>0</Flammability>
+      <Beauty>6</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+    </statBases>
+    <costList>
+      <CrystalMaterial>4</CrystalMaterial>
+    </costList>
+    <designationCategory>Structure</designationCategory>
+    <uiOrder>2030</uiOrder>
+    <building>
+      <isEdifice>false</isEdifice>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <paintable>false</paintable>
+    </building>
+    <comps>
+      <li Class="CrystalTech.CompProperties_CrystalRoof">
+        <lightTransmission>0.85</lightTransmission>
+      </li>
+      <li Class="CrystalTech.CompProperties_PowerPlantTransparentWall">
+        <basePowerConsumption>-2</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(128,153,255,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>CrystalAdvanced</li>
     </researchPrerequisites>
   </ThingDef>
 

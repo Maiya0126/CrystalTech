@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- 望远镜：取消"不能在屋顶下使用"的警告标记（透晶屋顶下视同露天，实际限制已由 Harmony 放开） -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Telescope"]/canBeUsedUnderRoof</xpath>
+    <value>
+      <canBeUsedUnderRoof>true</canBeUsedUnderRoof>
+    </value>
+  </Operation>
+
+</Patch>

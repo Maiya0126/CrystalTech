@@ -63,7 +63,10 @@
         <MakeDir Directories="$(ModOutputDir)\Defs\RecipeDefs" />
         <MakeDir Directories="$(ModOutputDir)\Textures\Things\Item" />
         <MakeDir Directories="$(ModOutputDir)\Textures\Things\Building\Furniture" />
+        <MakeDir Directories="$(ModOutputDir)\Textures\Things\Building\Furniture\CrystalBed\Bed" />
+        <MakeDir Directories="$(ModOutputDir)\Textures\Things\Building\Furniture\CrystalBed\DoubleBed" />
         <MakeDir Directories="$(ModOutputDir)\Textures\Things\Item\Weapons" />
+        <MakeDir Directories="$(ModOutputDir)\Patches" />
         <MakeDir Directories="$(ModOutputDir)\Languages\ChineseSimplified\DefInjected\ThingDef" />
         <MakeDir Directories="$(ModOutputDir)\Languages\ChineseSimplified\DefInjected\TerrainDef" />
         <MakeDir Directories="$(ModOutputDir)\Languages\ChineseSimplified\DefInjected\HediffDef" />
@@ -90,6 +93,8 @@
         <Copy SourceFiles="..\Defs\ThingDefs_Buildings\Buildings_Transparent_Special.xml" DestinationFiles="$(ModOutputDir)\Defs\ThingDefs_Buildings\Buildings_Transparent_Special.xml" />
         <Copy SourceFiles="..\Defs\ThingDefs_Buildings\Buildings_Transparent_Furniture.xml" DestinationFiles="$(ModOutputDir)\Defs\ThingDefs_Buildings\Buildings_Transparent_Furniture.xml" />
         <Copy SourceFiles="..\Defs\ThingDefs_Buildings\Buildings_Transparent_Security.xml" DestinationFiles="$(ModOutputDir)\Defs\ThingDefs_Buildings\Buildings_Transparent_Security.xml" />
+        <Copy SourceFiles="..\Defs\JoyDefs_Crystal.xml" DestinationFiles="$(ModOutputDir)\Defs\JoyDefs_Crystal.xml" />
+        <Copy SourceFiles="..\Patches\CrystalRoofPatches.xml" DestinationFiles="$(ModOutputDir)\Patches\CrystalRoofPatches.xml" Condition="Exists('..\Patches\CrystalRoofPatches.xml')" />
         <Copy SourceFiles="..\Defs\ThingDefs_Apparel\Apparel_Crystal.xml" DestinationFiles="$(ModOutputDir)\Defs\ThingDefs_Apparel\Apparel_Crystal.xml" />
         <Copy SourceFiles="..\Defs\ThingDefs_Weapons\Weapons_Crystal.xml" DestinationFiles="$(ModOutputDir)\Defs\ThingDefs_Weapons\Weapons_Crystal.xml" />
         <Copy SourceFiles="..\Defs\ThingDefs_Items\Items_Crystal.xml" DestinationFiles="$(ModOutputDir)\Defs\ThingDefs_Items\Items_Crystal.xml" />
@@ -106,6 +111,15 @@
         <Copy SourceFiles="..\Textures\Things\Item\CrystalTelescope.png" DestinationFiles="$(ModOutputDir)\Textures\Things\Item\CrystalTelescope.png" Condition="Exists('..\Textures\Things\Item\CrystalTelescope.png')" />
         <Copy SourceFiles="..\Textures\Things\Building\Furniture\TransparentCeilingLamp.png" DestinationFiles="$(ModOutputDir)\Textures\Things\Building\Furniture\TransparentCeilingLamp.png" Condition="Exists('..\Textures\Things\Building\Furniture\TransparentCeilingLamp.png')" />
         <Copy SourceFiles="..\Textures\Things\Item\Weapons\CrystalAcupointNeedle.png" DestinationFiles="$(ModOutputDir)\Textures\Things\Item\Weapons\CrystalAcupointNeedle.png" Condition="Exists('..\Textures\Things\Item\Weapons\CrystalAcupointNeedle.png')" />
+        <Copy SourceFiles="..\Textures\Things\Building\CrystalRoof.png" DestinationFiles="$(ModOutputDir)\Textures\Things\Building\CrystalRoof.png" Condition="Exists('..\Textures\Things\Building\CrystalRoof.png')" />
+        <Copy SourceFiles="..\Textures\Things\Building\Furniture\CrystalBed\Bed\CrystalBed_north.png" DestinationFiles="$(ModOutputDir)\Textures\Things\Building\Furniture\CrystalBed\Bed\CrystalBed_north.png" Condition="Exists('..\Textures\Things\Building\Furniture\CrystalBed\Bed\CrystalBed_north.png')" />
+        <Copy SourceFiles="..\Textures\Things\Building\Furniture\CrystalBed\Bed\CrystalBed_east.png" DestinationFiles="$(ModOutputDir)\Textures\Things\Building\Furniture\CrystalBed\Bed\CrystalBed_east.png" Condition="Exists('..\Textures\Things\Building\Furniture\CrystalBed\Bed\CrystalBed_east.png')" />
+        <Copy SourceFiles="..\Textures\Things\Building\Furniture\CrystalBed\Bed\CrystalBed_south.png" DestinationFiles="$(ModOutputDir)\Textures\Things\Building\Furniture\CrystalBed\Bed\CrystalBed_south.png" Condition="Exists('..\Textures\Things\Building\Furniture\CrystalBed\Bed\CrystalBed_south.png')" />
+        <Copy SourceFiles="..\Textures\Things\Building\Furniture\CrystalBed\Bed\CrystalBed_west.png" DestinationFiles="$(ModOutputDir)\Textures\Things\Building\Furniture\CrystalBed\Bed\CrystalBed_west.png" Condition="Exists('..\Textures\Things\Building\Furniture\CrystalBed\Bed\CrystalBed_west.png')" />
+        <Copy SourceFiles="..\Textures\Things\Building\Furniture\CrystalBed\DoubleBed\CrystalDoubleBed_north.png" DestinationFiles="$(ModOutputDir)\Textures\Things\Building\Furniture\CrystalBed\DoubleBed\CrystalDoubleBed_north.png" Condition="Exists('..\Textures\Things\Building\Furniture\CrystalBed\DoubleBed\CrystalDoubleBed_north.png')" />
+        <Copy SourceFiles="..\Textures\Things\Building\Furniture\CrystalBed\DoubleBed\CrystalDoubleBed_east.png" DestinationFiles="$(ModOutputDir)\Textures\Things\Building\Furniture\CrystalBed\DoubleBed\CrystalDoubleBed_east.png" Condition="Exists('..\Textures\Things\Building\Furniture\CrystalBed\DoubleBed\CrystalDoubleBed_east.png')" />
+        <Copy SourceFiles="..\Textures\Things\Building\Furniture\CrystalBed\DoubleBed\CrystalDoubleBed_south.png" DestinationFiles="$(ModOutputDir)\Textures\Things\Building\Furniture\CrystalBed\DoubleBed\CrystalDoubleBed_south.png" Condition="Exists('..\Textures\Things\Building\Furniture\CrystalBed\DoubleBed\CrystalDoubleBed_south.png')" />
+        <Copy SourceFiles="..\Textures\Things\Building\Furniture\CrystalBed\DoubleBed\CrystalDoubleBed_west.png" DestinationFiles="$(ModOutputDir)\Textures\Things\Building\Furniture\CrystalBed\DoubleBed\CrystalDoubleBed_west.png" Condition="Exists('..\Textures\Things\Building\Furniture\CrystalBed\DoubleBed\CrystalDoubleBed_west.png')" />
         
         <Copy SourceFiles="..\Languages\ChineseSimplified\DefInjected\ThingDef\ThingDefs_Transparent.xml" DestinationFiles="$(ModOutputDir)\Languages\ChineseSimplified\DefInjected\ThingDef\ThingDefs_Transparent.xml" />
         <Copy SourceFiles="..\Languages\ChineseSimplified\DefInjected\ThingDef\Apparel_Crystal.xml" DestinationFiles="$(ModOutputDir)\Languages\ChineseSimplified\DefInjected\ThingDef\Apparel_Crystal.xml" />

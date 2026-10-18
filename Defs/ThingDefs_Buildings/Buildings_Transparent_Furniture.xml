@@ -335,7 +335,7 @@
     <defaultPlacingRot>South</defaultPlacingRot>
     <size>(1,2)</size>
     <graphicData>
-      <texPath>Things/Building/Furniture/Bed/Bed</texPath>
+      <texPath>Things/Building/Furniture/CrystalBed/Bed/CrystalBed</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>Transparent</shaderType>
       <drawSize>(2,2)</drawSize>
@@ -380,6 +380,7 @@
     <building>
       <bed_showSleeperBody>false</bed_showSleeperBody>
       <bed_healPerDay>5</bed_healPerDay>
+      <paintable>false</paintable>
     </building>
     <comps>
       <li Class="CompProperties_AssignableToPawn">
@@ -433,7 +434,7 @@
     <defaultPlacingRot>South</defaultPlacingRot>
     <size>(2,2)</size>
     <graphicData>
-      <texPath>Things/Building/Furniture/Bed/DoubleBed</texPath>
+      <texPath>Things/Building/Furniture/CrystalBed/DoubleBed/CrystalDoubleBed</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>Transparent</shaderType>
       <drawSize>(2.05,2.05)</drawSize>
@@ -478,6 +479,7 @@
     <building>
       <bed_showSleeperBody>false</bed_showSleeperBody>
       <bed_healPerDay>5</bed_healPerDay>
+      <paintable>false</paintable>
     </building>
     <comps>
       <li Class="CompProperties_AssignableToPawn">

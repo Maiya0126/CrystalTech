@@ -73,11 +73,17 @@
   <ReinforcedTransparentDoor.label>强化透晶门</ReinforcedTransparentDoor.label>
   <ReinforcedTransparentDoor.description>用先进结合技术强化的超耐久透晶门，近乎坚不可摧且完全透光。可检测隐形生物。散发温暖的金色微光。</ReinforcedTransparentDoor.description>
 
+  <ReinforcedTransparentAutodoor.label>强化透晶自动门</ReinforcedTransparentAutodoor.label>
+  <ReinforcedTransparentAutodoor.description>用先进结合技术强化的超耐久透晶自动门，电力驱动使人无需减速即可通过。集成电力传输、隔绝真空、太阳能发电和隐形生物检测功能。散发温暖的金色微光。</ReinforcedTransparentAutodoor.description>
+
   <ReinforcedTransparentFence.label>强化透晶栅栏</ReinforcedTransparentFence.label>
   <ReinforcedTransparentFence.description>用先进结合技术强化的超耐久透晶栅栏。光线自由穿透。可检测隐形生物。散发温暖的金色微光。</ReinforcedTransparentFence.description>
 
   <ReinforcedTransparentFenceGate.label>强化透晶栅栏门</ReinforcedTransparentFenceGate.label>
   <ReinforcedTransparentFenceGate.description>用先进结合技术强化的超耐久透晶栅栏门。光线自由穿透。散发温暖的金色微光。</ReinforcedTransparentFenceGate.description>
+
+  <CrystalRoofPanel.label>透晶屋顶板</CrystalRoofPanel.label>
+  <CrystalRoofPanel.description>半透明的透晶屋顶板。每块板都自带独立的晶格支撑结构，可在任何地方架起，遮风挡雨而不挡阳光。建造后立即在其所在格生成晶质屋顶。依靠环境光自供电，并向下方房间散发柔和光芒。防火。</CrystalRoofPanel.description>
 
   <CrystalLongSword.label>透晶长剑</CrystalLongSword.label>
   <CrystalLongSword.description>以透晶锻成的长剑，轻若无物却锋利至极。刃出如风，目光未及而血已流。</CrystalLongSword.description>

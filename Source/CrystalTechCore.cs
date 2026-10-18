@@ -3,6 +3,7 @@ using RimWorld;
 using Verse;
 using Verse.AI;
 using UnityEngine;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -30,7 +31,7 @@ namespace CrystalTech
 
         public static readonly List<string> ReinforcedTransparentDefNames = new List<string>
         {
-            "ReinforcedTransparentWall", "ReinforcedTransparentDoor",
+            "ReinforcedTransparentWall", "ReinforcedTransparentDoor", "ReinforcedTransparentAutodoor",
             "ReinforcedTransparentFence", "ReinforcedTransparentFenceGate"
         };
 
@@ -376,10 +377,27 @@ namespace CrystalTech
         static void Postfix(GlowGrid __instance, IntVec3 c, ref float __result)
         {
             if (Main.Settings != null && !Main.Settings.enableLightTransmission) return;
-            if (__result > 0.3f) return;
             Map map = Traverse.Create(__instance).Field("map").GetValue<Map>();
             if (map == null) return;
             if (!c.Roofed(map)) return;
+
+            // Crystal roof panel: transmit sunlight directly into the roofed cell
+            List<Thing> thingsAt = map.thingGrid.ThingsListAt(c);
+            for (int i = 0; i < thingsAt.Count; i++)
+            {
+                Comp_CrystalRoof comp = thingsAt[i].TryGetComp<Comp_CrystalRoof>();
+                if (comp != null)
+                {
+                    float sky = map.skyManager.CurSkyGlow;
+                    if (sky > 0.1f)
+                    {
+                        __result = Mathf.Max(__result, sky * comp.LightTransmission);
+                    }
+                    break;
+                }
+            }
+
+            if (__result > 0.3f) return;
             float skyGlow = map.skyManager.CurSkyGlow;
             if (skyGlow < 0.1f) return;
             float bestBoost = 0f;
@@ -539,4 +557,7 @@ namespace CrystalTech
             CrystalTechCore.UpdateCrystalGlow(__instance.pawn);
         }
     }
+
 }
+
+

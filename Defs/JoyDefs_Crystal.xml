@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- 透晶穹顶观星 Job -->
+  <JobDef>
+    <defName>CrystalSkygaze</defName>
+    <driverClass>CrystalTech.JobDriver_CrystalSkygaze</driverClass>
+    <joyDuration>4000</joyDuration>
+    <joyKind>Meditative</joyKind>
+    <reportString>crystal skygazing.</reportString>
+  </JobDef>
+
+  <!-- 透晶穹顶观星 JoyGiver -->
+  <JoyGiverDef>
+    <defName>CrystalSkygaze</defName>
+    <baseChance>1</baseChance>
+    <giverClass>CrystalTech.JoyGiver_CrystalSkygaze</giverClass>
+    <jobDef>CrystalSkygaze</jobDef>
+    <joyKind>Meditative</joyKind>
+    <requiredCapacities>
+      <li>Sight</li>
+    </requiredCapacities>
+    <requiresEnjoyOutdoors>true</requiresEnjoyOutdoors>
+  </JoyGiverDef>
+
+  <!-- 透过晶顶观星想法 -->
+  <ThoughtDef>
+    <defName>CrystalDomeSkygaze</defName>
+    <workerClass>CrystalTech.ThoughtWorker_CrystalSkygaze</workerClass>
+    <stages>
+      <li>
+        <label>gazing at the sky through crystal dome</label>
+        <description>仰望透晶穹顶之上的天空，星辰云影仿佛触手可及。</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

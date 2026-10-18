@@ -65,6 +65,8 @@
     <building>
       <isAirtight>true</isAirtight>
       <isWall>true</isWall>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <supportsWallAttachments>true</supportsWallAttachments>
       <canExchangeVacuum>true</canExchangeVacuum>
       <relatedBuildCommands>
         <li>ReinforcedTransparentDoor</li>
@@ -139,6 +141,7 @@
       </blueprintGraphicData>
       <relatedBuildCommands>
         <li>ReinforcedTransparentWall</li>
+        <li>ReinforcedTransparentAutodoor</li>
       </relatedBuildCommands>
     </building>
     <comps>
@@ -156,6 +159,94 @@
     </comps>
     <researchPrerequisites>
       <li>CrystalReinforced</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- 强化透晶自动门 -->
+  <ThingDef ParentName="DoorBase">
+    <defName>ReinforcedTransparentAutodoor</defName>
+    <label>reinforced transparent autodoor</label>
+    <description>An ultra-durable transparent autodoor reinforced with advanced crystal binding techniques. Powered operation allows passage without slowing down. Integrates power transmission, vacuum isolation, solar generation, and cloaked creature detection. Emits a warm golden glow.</description>
+    <stuffCategories Inherit="False" />
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <graphicData>
+      <texPath>Things/Building/Door/Autodoor_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/Autodoor_MenuIcon</uiIconPath>
+    <drawDamagedOverlay>false</drawDamagedOverlay>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <blockWind>true</blockWind>
+    <statBases>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>12</Beauty>
+      <Cleanliness>0.5</Cleanliness>
+    </statBases>
+    <costList>
+      <CrystalMaterial>15</CrystalMaterial>
+      <Steel>5</Steel>
+      <Silver>3</Silver>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <blockLight>false</blockLight>
+    <designationCategory>Structure</designationCategory>
+    <uiOrder>2021</uiOrder>
+    <replaceTags>
+      <li>Door</li>
+    </replaceTags>
+    <building>
+      <isInert>true</isInert>
+      <isAirtight>true</isAirtight>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <canExchangeVacuum>true</canExchangeVacuum>
+      <soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
+      <soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
+      <soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
+      <soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
+      <ai_chillDestination>false</ai_chillDestination>
+      <blueprintClass>Blueprint_Door</blueprintClass>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Door/Door_Blueprint</texPath>
+      </blueprintGraphicData>
+      <relatedBuildCommands>
+        <li>ReinforcedTransparentWall</li>
+        <li>ReinforcedTransparentDoor</li>
+      </relatedBuildCommands>
+    </building>
+    <comps>
+      <li Class="CompProperties_Forbiddable">
+        <allowNonPlayer>true</allowNonPlayer>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>50</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CrystalTech.CompProperties_PowerPlantTransparentWall">
+        <basePowerConsumption>-30</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(255,204,102,0)</glowColor>
+      </li>
+      <li Class="CrystalTech.CompProperties_CrystalDetector">
+        <detectionRadius>20</detectionRadius>
+      </li>
+    </comps>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>CrystalReinforced</li>
+      <li>Autodoors</li>
     </researchPrerequisites>
   </ThingDef>
 
