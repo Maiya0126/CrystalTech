@@ -86,13 +86,13 @@
   <CrystalRoofPanel.description>半透明的透晶屋顶板。每块板都自带独立的晶格支撑结构，可在任何地方架起，遮风挡雨而不挡阳光。建造后立即在其所在格生成晶质屋顶。依靠环境光自供电，并向下方房间散发柔和光芒。防火。</CrystalRoofPanel.description>
 
   <CrystalLongSword.label>透晶长剑</CrystalLongSword.label>
-  <CrystalLongSword.description>以透晶锻成的长剑，轻若无物却锋利至极。刃出如风，目光未及而血已流。</CrystalLongSword.description>
+  <CrystalLongSword.description>以透晶锻成的长剑，轻若无物却锋利至极。出招快如疾风，收招更在电光之间，攻势连绵令敌无从招架。</CrystalLongSword.description>
 
   <CrystalSpear.label>透晶长矛</CrystalSpear.label>
-  <CrystalSpear.description>透晶矛尖如针刺纸，纵是机甲的合金装甲也万难抵挡其贯穿之力。克机械族利器。</CrystalSpear.description>
+  <CrystalSpear.description>透晶矛尖如针刺纸，纵是机甲的合金装甲也万难抵挡其贯穿之力。矛身缠绕晶能电弧，刺中机械族时更会迸发EMP冲击，令其僵直失灵。</CrystalSpear.description>
 
   <CrystalGreatBow.label>透晶大弓</CrystalGreatBow.label>
-  <CrystalGreatBow.description>以透晶丝为弦的大弓，箭矢为水晶碎片。张弓放箭之速为寻常大弓两倍，破空而至，凌厉无比。</CrystalGreatBow.description>
+  <CrystalGreatBow.description>以透晶丝为弦的大弓，箭矢为水晶碎片。张弓放箭之速为寻常大弓两倍，透晶箭破空而至，凌厉非常。</CrystalGreatBow.description>
 
   <CrystalDivineNeedle.label>透晶神针</CrystalDivineNeedle.label>
   <CrystalDivineNeedle.description>以透晶铸成的神针，洞悉肉身之意。一触即令目标陷入深度麻醉——友军得晶能再生之愈，敌手遭血脉逆乱之苦。</CrystalDivineNeedle.description>
